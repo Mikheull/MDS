@@ -1,0 +1,23 @@
+{
+  "name": "siretsinvaders",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "import": "node ./scripts/import.js",
+    "start": "node ./scripts/main.js",
+    "pause": "node ./scripts/pause.js"
+  },
+  "keywords": [],
+  "author": "Mikhael Bailly",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^2.3.3",
+    "csv-split-stream": "^1.0.2",
+    "dotenv": "^8.2.0",
+    "log-to-file": "^2.0.2",
+    "mongoose": "^5.10.3",
+    "pm2": "^4.4.1"
+  }
+}
