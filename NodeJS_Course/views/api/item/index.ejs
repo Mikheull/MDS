@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>API velib</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+
+        <% if (regex_check == true) { %>
+
+            <div class="row">
+                <div class="col mt-5">
+
+                    <% if (response.nhits !== 0) { %>
+                        <% var res = response.records[0].fields %>
+                        <h2>Information de la station <u><%= res.station_name %></u> :</h2>
+
+                        <div class="card mb-3 mt-3">
+                            <div class="row no-gutters">
+                                <div class="col-md-6">
+                                    <img src="https://img.lemde.fr/2018/07/10/0/0/3200/2133/688/0/60/0/b1fbf35_FW1_FRANCE-PARIS-BICYLCES_0710_11.JPG" class="card-img" alt="...">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Vélos</h5>
+                                        <p class="card-text"><%= res.nbfreeedock %>/<%= res.nbedock %></p>
+                                        <ul class="list-group">
+                                            <li class="list-group-item"><i class="fas fa-bicycle"></i> Electrique : <%= res.nbbike %></li>
+                                            <li class="list-group-item"><i class="fas fa-bolt"></i> Mecanique : <%= res.nbebike %></li>
+                                        </ul>
+                                        <p class="card-text"><small class="text-muted">Paiement par carte <%- (res.creditcard == 'yes') ? '<i class="fas fa-credit-card"></i>' : '<i class="far fa-times-circle"></i>' %></small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                    <% } else { %>
+                
+                        <h2>Aucun résultat pour cette station <%= station_code %></h2>
+                
+                    <% } %>
+                </div>
+            </div>
+
+        <% } else { %>
+                
+            <div class="alert alert-danger mt-5" role="alert">
+                <h4 class="alert-heading">Erreur!</h4>
+                <p>La station que vous avez demandé n'a pas été trouvée !</p>
+            </div>
+
+        <% } %>
+    </div>
+
+
+</body>
+</html>
