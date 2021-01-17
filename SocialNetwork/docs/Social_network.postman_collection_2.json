@@ -1,0 +1,2301 @@
+{
+	"info": {
+		"_postman_id": "f1167699-45c9-45ee-95ac-9d164a446c1a",
+		"name": "Social_network",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "v1",
+			"item": [
+				{
+					"name": "users",
+					"item": [
+						{
+							"name": "Get all users",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get a user",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/users/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5e907efcf4e1766b67071ff9"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create an user",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"first_name\": \"John\",\n\t\"last_name\": \"Doe\",\n\t\"username\": \"John_doe\",\n\t\"email\": \"john.doe@gmail.com\",\n\t\"password\": \"4813494d137e1631bba301d5acab6e7bb7aa74ce1185d456565ef51d737677b2\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/users/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"users",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit an user",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\": \"Mikheull\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/users/:id/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"users",
+										":id",
+										"update"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebbe73ee02fc606c9eff901"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete an user",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/users/:id/delete",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"users",
+										":id",
+										"delete"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebbe73ee02fc606c9eff901"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "events",
+					"item": [
+						{
+							"name": "Get all events",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/events",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"events"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get an event",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/events/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"events",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebbe780e02fc606c9eff903"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create an event",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"Quarantaine\",\n\t\"description\": \"Passons la quarantaine ensemble à distance\",\n\t\"date_begin\": \"2020-04-10T20:00:00\",\n\t\"date_end\": \"2020-04-12T18:30:00\",\n\t\"location\": \"Chez vous\",\n\t\"public\": true,\n\t\"managers\": [\"5e907efcf4e1766b67071ff9\"],\n\t\"by_group\": \"5e971452559f045d7439b9f2\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/events/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"events",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Join an event",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"user_id\": \"5e90dbffb91b1613ba47c5101\",\n\t\"manager\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/events/:id/join",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"events",
+										":id",
+										"join"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5e91cbee25b273441cc7d9c0"
+										}
+									]
+								},
+								"description": "Rejoindre un évenement (ajouter {\"manager\": true} pour définir en tant que managger)"
+							},
+							"response": []
+						},
+						{
+							"name": "Leave an event",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"user_id\": \"5e90dbffb91b1613ba47c5101\",\n\t\"manager\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/events/:id/leave",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"events",
+										":id",
+										"leave"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5e91cbee25b273441cc7d9c0"
+										}
+									]
+								},
+								"description": "Quitter un évenement (ajouter {\"manager\": true} pour définir en tant que managger)"
+							},
+							"response": []
+						},
+						{
+							"name": "Edit an event",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"Quarantaine\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/events/:id/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"events",
+										":id",
+										"update"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5e91cbee25b273441cc7d9c0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete an event",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/events/:id/delete",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"events",
+										":id",
+										"delete"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5e91cbb125b273441cc7d9b1"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "groups",
+					"item": [
+						{
+							"name": "Get all groups",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/groups",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"groups"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get a group",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/groups/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"groups",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5e971452559f045d7439b9f2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a group",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"Groupe1\",\n\t\"description\": \"Petite description du groupe\",\n\t\"date_begin\": \"2020-04-15T16:03:00\",\n\t\"group_type\": \"private\",\n\t\"managers\": [\"5e907efcf4e1766b67071ff9\"],\n\t\"permissions\": {\n\t\t\"member_publish\": true,\n\t\t\"member_create_event\": false\n\t}\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/groups/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"groups",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Invite in a group",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"type\": \"group\",\n\t\"id_destination\": \"5e971452559f045d7439b9f2\",\n\t\"role\": \"member\",\n\t\"id_receiver\": \"5e90dbffb91b1613ba47c5101\",\n\t\"id_sender\": \"5e907efcf4e1766b67071ff9\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/groups/:id/invite",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"groups",
+										":id",
+										"invite"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5e971452559f045d7439b9f2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Join a group",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"user_id\": \"10100100100100100010100101\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/groups/:id/join",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"groups",
+										":id",
+										"join"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5e971452559f045d7439b9f2"
+										}
+									]
+								},
+								"description": "Rejoindre un groupe (ajouter {\"manager\": true} pour définir en tant que managger)"
+							},
+							"response": []
+						},
+						{
+							"name": "Leave a group",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"user_id\": \"10100100100100100010100101\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/groups/:id/leave",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"groups",
+										":id",
+										"leave"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5e971452559f045d7439b9f2"
+										}
+									]
+								},
+								"description": "Quitter un groupe (ajouter {\"manager\": true} pour définir en tant que managger)"
+							},
+							"response": []
+						},
+						{
+							"name": "Edit a group",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"Groupe #1\",\n\t\"group_type\": \"private\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/groups/:id/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"groups",
+										":id",
+										"update"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5e971452559f045d7439b9f2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete a group",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/groups/5e91cbb125b273441cc7d9bf/delete",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"groups",
+										"5e91cbb125b273441cc7d9bf",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "invitations",
+					"item": [
+						{
+							"name": "Get all invitations",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/invitations",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"invitations"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get an invitation",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/invitations/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"invitations",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5e972026329b0863ba031e4c"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create an invitation",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"type\": \"group\",\n\t\"id_destination\": \"5e971452559f045d7439b9f2\",\n\t\"role\": \"member\",\n\t\"id_receiver\": \"10100100100100100010100101\",\n\t\"id_sender\": \"5e907efcf4e1766b67071ff9\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/invitations/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"invitations",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit an invitation",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"date_end\": null,\n\t\"enable\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/invitations/:id/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"invitations",
+										":id",
+										"update"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5e972026329b0863ba031e4c"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete an invitation",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/invitations/:id/delete",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"invitations",
+										":id",
+										"delete"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5e971fac4486296365033602"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "discussions",
+					"item": [
+						{
+							"name": "Get all discussions",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/discussions",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"discussions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get a discussion",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/discussions/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"discussions",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eaed5dac689cfbc9cd481fc"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all messages in discussion",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/discussions/:id/messages",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"discussions",
+										":id",
+										"messages"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eaed5dac689cfbc9cd481fc"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a discussion",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"type\": \"group\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/discussions/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"discussions",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit a discussion",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"type\": \"event\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/discussions/:id/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"discussions",
+										":id",
+										"update"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eaed5dac689cfbc9cd481fc"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete a discussion",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/discussions/:id/delete",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"discussions",
+										":id",
+										"delete"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5e971fac4486296365033602"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "messages",
+					"item": [
+						{
+							"name": "Get all messages",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/messages",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"messages"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get a message",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/messages/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"messages",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eaedb4adab36bc314462f1a"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all comments of a message",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/messages/:id/comments",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"messages",
+										":id",
+										"comments"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eaedb4adab36bc314462f1a"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a message",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"author_id\": \"5e907efcf4e1766b67071ff9\",\n\t\"discussion_ref\": \"5eaed5dac689cfbc9cd481fc\",\n\t\"content\": \"hello world\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/messages/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"messages",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit a discussion",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"content_modified\": \"Hello world modified\",\n\t\"date_modified\": \"2020-05-03T14:57:30.207Z\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/messages/:id/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"messages",
+										":id",
+										"update"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eaedb4adab36bc314462f1a"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete a message",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/messages/:id/delete",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"messages",
+										":id",
+										"delete"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5e971fac4486296365033602"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "comments",
+					"item": [
+						{
+							"name": "Get all comments",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/comments",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"comments"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get a comment",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/comments/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"comments",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eaee399a9cdb7c764a42a90"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a comment on discussion message group",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"type\": \"group_message\",\n\t\"author_id\": \"5e907efcf4e1766b67071ff9\",\n\t\"message_ref\": \"5eaedb4adab36bc314462f1a\",\n\t\"content\": \"Commentaire\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/comments/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"comments",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a comment on album",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"type\": \"album\",\n\t\"author_id\": \"5e907efcf4e1766b67071ff9\",\n\t\"ref\": \"5eaedb4adab36bc314462f1a\",\n\t\"content\": \"Commentaire d une image\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/comments/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"comments",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit a comment",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"content_modified\": \"comment modified\",\n\t\"date_modified\": \"2020-05-03T14:57:30.207Z\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/comments/:id/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"comments",
+										":id",
+										"update"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eaee399a9cdb7c764a42a90"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete a comment",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/comments/:id/delete",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"comments",
+										":id",
+										"delete"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb078326b681f74a4ea77e1"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "albums",
+					"item": [
+						{
+							"name": "pictures",
+							"item": [
+								{
+									"name": "Get all pictures in album",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3030/v1/albums/:id/pictures",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3030",
+											"path": [
+												"v1",
+												"albums",
+												":id",
+												"pictures"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5eb081f0d9e87a7d063a47ae"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get all comments of a picture",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3030/v1/albums/:id/pictures/:pic_id/comments",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3030",
+											"path": [
+												"v1",
+												"albums",
+												":id",
+												"pictures",
+												":pic_id",
+												"comments"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5eb081f0d9e87a7d063a47ae"
+												},
+												{
+													"key": "pic_id",
+													"value": "5eaedb4adab36bc314462f1a"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Create a picture in album",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"album_ref\": \"5eb081f0d9e87a7d063a47ae\",\n\t\"path\": \"/2020-05-04/test_image2.png\",\n\t\"title\": \"Mon image #2\",\n\t\"author_id\": \"5e907efcf4e1766b67071ff9\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3030/v1/albums/:id/pictures/create",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3030",
+											"path": [
+												"v1",
+												"albums",
+												":id",
+												"pictures",
+												"create"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5eb081f0d9e87a7d063a47ae"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Edit a picture in album",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"title\": \"Mon image modifié\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3030/v1/albums/:id/pictures/update",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3030",
+											"path": [
+												"v1",
+												"albums",
+												":id",
+												"pictures",
+												"update"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5eb085ed48724a81bdcce090"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete a picture in album",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3030/v1/albums/:id/pictures/delete",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3030",
+											"path": [
+												"v1",
+												"albums",
+												":id",
+												"pictures",
+												"delete"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5eb085ed48724a81bdcce090"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Get all albums",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/albums",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"albums"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get an album",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/albums/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"albums",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb080d00374687b00722568"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create an album",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"event_ref\": \"5e90d0c19a4ec681e260c763\",\n\t\"title\": \"Album test2\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/albums/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"albums",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit an album",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"title\": \"title modified\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/albums/:id/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"albums",
+										":id",
+										"update"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb080d00374687b00722568"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete an album",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/albums/:id/delete",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"albums",
+										":id",
+										"delete"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb080d00374687b00722568"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "polls",
+					"item": [
+						{
+							"name": "Get all polls",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/polls",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"polls"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get a poll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/polls/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"polls",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb167fcc0584a30ba3ebec9"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a poll",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"author_id\": \"5e907efcf4e1766b67071ff9\",\n\t\"title\": \"Mon sondage\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/polls/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"polls",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit a poll",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"title\": \"Sondage modifié\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/polls/:id/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"polls",
+										":id",
+										"update"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb167fcc0584a30ba3ebec9"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete a poll",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/polls/:id/delete",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"polls",
+										":id",
+										"delete"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb167fcc0584a30ba3ebec1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a question in a poll",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"content\": \"Ma seconde question\",\n\t\"poll_ref\": \"5eb16bbd234475336e0112dc\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/polls/:id/questions/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"polls",
+										":id",
+										"questions",
+										"create"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb16bbd234475336e0112dc"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create an answer for a question in a poll",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"content\": \"Réponse #3\",\n\t\"poll_ref\": \"5eb16bbd234475336e0112dc\",\n\t\"question_ref\": \"5eb1779416036a3ab64ce784\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/polls/:id/questions/:id_question/answer/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"polls",
+										":id",
+										"questions",
+										":id_question",
+										"answer",
+										"create"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb16bbd234475336e0112dc"
+										},
+										{
+											"key": "id_question",
+											"value": "5eb1779416036a3ab64ce784"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all questions in a poll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/polls/:id/questions",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"polls",
+										":id",
+										"questions"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb16bbd234475336e0112dc"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all answers of a question in a poll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/polls/:id/questions/:question_id/answers",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"polls",
+										":id",
+										"questions",
+										":question_id",
+										"answers"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb16bbd234475336e0112dc"
+										},
+										{
+											"key": "question_id",
+											"value": "5eb1779416036a3ab64ce784"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a poll answer",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"author_id\": \"a\",\n\t\"answer\": \"Test\",\n\t\"poll_ref\": \"5eb16bbd234475336e0112dc\",\n\t\"question_ref\": \"5eb1779416036a3ab64ce784\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/polls/:id/questions/:id_question/answer/define",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"polls",
+										":id",
+										"questions",
+										":id_question",
+										"answer",
+										"define"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb16bbd234475336e0112dc"
+										},
+										{
+											"key": "id_question",
+											"value": "5eb1779416036a3ab64ce784"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "shopping",
+					"item": [
+						{
+							"name": "Create a shopping list",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"event_id\": \"5ebbe780e02fc606c9eff903\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/shoppings/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"shoppings",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create an item in a shopping list",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"event_id\": \"5ebbe780e02fc606c9eff903\",\n\t\"name\": \"Soda\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/shoppings/items/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"shoppings",
+										"items",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all items in a shopping list",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/shoppings/:id/items",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"shoppings",
+										":id",
+										"items"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebbe780e02fc606c9eff903"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit an item in a shopping list",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"renamed\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/shoppings_item/:id/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"shoppings_item",
+										":id",
+										"update"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebbf1a7dcc2b113367d6c73"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete an item in a shopping list",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/shoppings_item/:id/delete",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"shoppings_item",
+										":id",
+										"delete"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebbf1a7dcc2b113367d6c73"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Define an item on an user",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"event_id\": \"5ebbe780e02fc606c9eff903\",\n\t\"item_id\": \"5ebbf164638f0712b7373cfa\",\n\t\"quantity\": \"1\",\n\t\"hour\": \"2020-05-13T13:19:59.417Z\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/shoppings_item/:id/shoppers/define/:user_id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"shoppings_item",
+										":id",
+										"shoppers",
+										"define",
+										":user_id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebbf164638f0712b7373cfa"
+										},
+										{
+											"key": "user_id",
+											"value": "5e907efcf4e1766b67071ff9"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Remove an item from an user",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3030/v1/shoppings_item/:id/shoppers/remove",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"shoppings_item",
+										":id",
+										"shoppers",
+										"remove"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebbf164638f0712b7373cfa"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all reserved items in a shopping list",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3030/v1/shoppings/:id/items/shoppers",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3030",
+									"path": [
+										"v1",
+										"shoppings",
+										":id",
+										"items",
+										"shoppers"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebbe780e02fc606c9eff903"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "vmAjzxubLDjQvnjuVSsufEkBC6TXKmCiNdP8YN9v2G5mLnfymnvjM5Vv-evDGkQ6gC8Sgz6s8uhZ3BeUbGkXq",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "x-access-token",
+				"type": "string"
+			},
+			{
+				"key": "in",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "fe7e8e25-ace8-494f-b932-731c0d1c9b0c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "ec6224ca-686d-4324-bc50-d76bfd35ee3c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

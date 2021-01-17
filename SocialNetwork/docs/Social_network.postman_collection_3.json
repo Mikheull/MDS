@@ -1,0 +1,7001 @@
+{
+	"info": {
+		"_postman_id": "f1167699-45c9-45ee-95ac-9d164a446c1a",
+		"name": "Social_network",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "v1",
+			"item": [
+				{
+					"name": "albums",
+					"item": [
+						{
+							"name": "Get all albums",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "f80c8a04-9187-4522-a9a9-f2ddf8f5f959",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/albums",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"albums"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get all albums",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/albums",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"albums"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get an unique album",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/albums/:id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"albums",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb081f0d9e87a7d063a47ae"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get an unique album",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/albums/:id",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"albums",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5eb081f0d9e87a7d063a47ae"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get all the pictures from an album",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/albums/:id/pictures",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"albums",
+										":id",
+										"pictures"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb081f0d9e87a7d063a47ae"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get all the pictures from an album",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/albums/:id/pictures",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"albums",
+												":id",
+												"pictures"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5eb081f0d9e87a7d063a47ae"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get an unique picture",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/albums/:id/pictures/:picture_id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"albums",
+										":id",
+										"pictures",
+										":picture_id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb081f0d9e87a7d063a47ae"
+										},
+										{
+											"key": "picture_id",
+											"value": "5ebd6db554749d94e874af04"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get an unique picture",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/albums/:id/pictures/:picture_id",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"albums",
+												":id",
+												"pictures",
+												":picture_id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5eb081f0d9e87a7d063a47ae"
+												},
+												{
+													"key": "picture_id",
+													"value": "5ebd6db554749d94e874af04"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get all comments from a picture",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/albums/:id/pictures/:picture_id/comments",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"albums",
+										":id",
+										"pictures",
+										":picture_id",
+										"comments"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb081f0d9e87a7d063a47ae"
+										},
+										{
+											"key": "picture_id",
+											"value": "5ebd6db554749d94e874af04"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get all comments from a picture",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/albums/:id/pictures/:picture_id/comments",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"albums",
+												":id",
+												"pictures",
+												":picture_id",
+												"comments"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5eb081f0d9e87a7d063a47ae"
+												},
+												{
+													"key": "picture_id",
+													"value": "5ebd6db554749d94e874af04"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Create an album",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"event_ref\": \"5e90d0c19a4ec681e260c763\",\n\t\"title\": \"Mon ablum photo\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/albums/create",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"albums",
+										"create"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Create an album",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"event_ref\": \"5e90d0c19a4ec681e260c763\",\n\t\"title\": \"Mon ablum photo\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/albums/create",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"albums",
+												"create"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "15"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"f-ayLlCL3PuzXSThdu78iReSEjl6Y\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 15:20:31 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"result\": true\n}"
+								}
+							]
+						},
+						{
+							"name": "Create a picture on an album",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"path\": \"/2020-05-04/test_image2.png\",\n\t\"title\": \"Ma seconde image\",\n\t\"author_id\": \"5e907efcf4e1766b67071ff9\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/albums/:id/pictures/create",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"albums",
+										":id",
+										"pictures",
+										"create"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb081f0d9e87a7d063a47ae"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Create a picture on an album",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"path\": \"/2020-05-04/test_image2.png\",\n\t\"title\": \"Ma première image\",\n\t\"author_id\": \"5e907efcf4e1766b67071ff9\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/albums/:id/pictures/create",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"albums",
+												":id",
+												"pictures",
+												"create"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5eb081f0d9e87a7d063a47ae"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "244"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"f4-pWPCSBw8pVV63JdWa+gXn7eSU+8\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 15:22:55 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"album\": {\n        \"enable\": true,\n        \"album_ref\": \"5ebd6213970f8f8908c38b04\",\n        \"path\": \"/2020-05-04/test_image2.png\",\n        \"title\": \"Ma première image\",\n        \"author_id\": \"5e907efcf4e1766b67071ff9\",\n        \"date_creation\": \"2020-05-14T15:22:55.094Z\",\n        \"id\": \"5ebd624f970f8f8908c38b05\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Edit an album",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"title\": \"Mon nouveau titre\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/albums/:id/update",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"albums",
+										":id",
+										"update"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebd6213970f8f8908c38b04"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Edit an album",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"title\": \"Mon nouveau titre 1\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/albums/:id/update",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"albums",
+												":id",
+												"update"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebd6213970f8f8908c38b04"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "492"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1ec-LdZj6astKpUe8uvIYInxdbaFytE\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 15:24:00 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"album\": {\n        \"enable\": true,\n        \"event_ref\": {\n            \"description\": \"Passons la quarantaine ensemble à distance\",\n            \"date_end\": \"2020-04-12T16:30:00.000Z\",\n            \"location\": \"Chez vous\",\n            \"cover_image\": null,\n            \"public\": true,\n            \"shopping_list\": false,\n            \"tickets\": false,\n            \"managers\": [\n                \"5e907efcf4e1766b67071ff9\"\n            ],\n            \"members\": [],\n            \"enable\": true,\n            \"name\": \"Quarantaine\",\n            \"date_begin\": \"2020-04-10T18:00:00.000Z\",\n            \"id\": \"5e90d0c19a4ec681e260c763\"\n        },\n        \"title\": \"Mon ablum photo\",\n        \"date_creation\": \"2020-05-14T15:21:55.381Z\",\n        \"id\": \"5ebd6213970f8f8908c38b04\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Edit a picture on an album",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"title\": \"Mon image modifiée\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/albums/:id/pictures/:picture_id/update",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"albums",
+										":id",
+										"pictures",
+										":picture_id",
+										"update"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb081f0d9e87a7d063a47ae"
+										},
+										{
+											"key": "picture_id",
+											"value": "5ebd6ee8608a4395872ca27e"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Edit a picture in album",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"title\": \"Mon image modifiée\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/albums/:id/pictures/:picture_id/update",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"albums",
+												":id",
+												"pictures",
+												":picture_id",
+												"update"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5eb081f0d9e87a7d063a47ae"
+												},
+												{
+													"key": "picture_id",
+													"value": "5ebd6ee8608a4395872ca27e"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "619"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"26b-YL0jd9wOrhMn3AYSEkucO5SBDXQ\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 15:32:46 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"picture\": {\n        \"enable\": true,\n        \"album_ref\": \"5ebd6213970f8f8908c38b04\",\n        \"path\": \"/2020-05-04/test_image2.png\",\n        \"title\": \"Mon image modifiée\",\n        \"author_id\": {\n            \"status\": true,\n            \"image_profile\": \"https://www.breizh-info.com/wp-content/uploads/2019/12/chewbacca.jpg\",\n            \"first_name\": \"Mikhael\",\n            \"last_name\": \"Bailly\",\n            \"username\": \"Mikheull\",\n            \"email\": \"mikhae.bailly@gmail.com\",\n            \"password\": \"4813494d137e1631bba301d5acab6e7bb7aa74ce1185d456565ef51d737677b2\",\n            \"date_creation\": \"2020-04-10T14:13:16.570Z\",\n            \"date_modified\": \"2020-04-10T14:13:16.570Z\",\n            \"id\": \"5e907efcf4e1766b67071ff9\"\n        },\n        \"date_creation\": \"2020-05-14T15:22:55.094Z\",\n        \"id\": \"5ebd624f970f8f8908c38b05\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete an album",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/albums/:id/delete",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"albums",
+										":id",
+										"delete"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb080d00374687b00722568"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete an album",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/albums/:id/delete",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"albums",
+												":id",
+												"delete"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5eb080d00374687b00722568"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "47"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"2f-8J57a+eAMvMlfhcymGl8a9GQ7o8\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 15:33:40 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": {\n        \"status\": 400,\n        \"message\": \"invalid id\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete a picture from an album",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/albums/:id/pictures/:picture_id/delete",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"albums",
+										":id",
+										"pictures",
+										":picture_id",
+										"delete"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb081f0d9e87a7d063a47ae"
+										},
+										{
+											"key": "picture_id",
+											"value": "5ebd6ee8608a4395872ca27e"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete a picture from an album",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/albums/:id/pictures/:picture_id/delete",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"albums",
+												":id",
+												"pictures",
+												":picture_id",
+												"delete"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5eb081f0d9e87a7d063a47ae"
+												},
+												{
+													"key": "picture_id",
+													"value": "5ebd6ee8608a4395872ca27e"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "47"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"2f-OG5y2nf9AweH/jY4N/75Y2X3q5U\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 16:23:28 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": {\n        \"code\": 400,\n        \"message\": \"ID not found\"\n    }\n}"
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "comments",
+					"item": [
+						{
+							"name": "Get all comments",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/comments",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"comments"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get all comments",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/comments",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"comments"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get a comment",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/comments/:id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"comments",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb08a080b66b0869c825480"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get a comment",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/comments/:id",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"comments",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5eb08a080b66b0869c825480"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Create a comment on discussion message group",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"type\": \"group_message\",\n\t\"author_id\": \"5e907efcf4e1766b67071ff9\",\n\t\"message_ref\": \"5ebd8090f480b4a633b357c6\",\n\t\"content\": \"Commentaire\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/comments/create",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"comments",
+										"create"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Create a comment on album",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"type\": \"album\",\n\t\"author_id\": \"5e907efcf4e1766b67071ff9\",\n\t\"ref\": \"5eaedb4adab36bc314462f1a\",\n\t\"content\": \"Commentaire d une image\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/comments/create",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"comments",
+												"create"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								},
+								{
+									"name": "Create a comment on discussion message group",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"type\": \"group_message\",\n\t\"author_id\": \"5e907efcf4e1766b67071ff9\",\n\t\"message_ref\": \"5eaedb4adab36bc314462f1a\",\n\t\"content\": \"Commentaire\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/comments/create",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"comments",
+												"create"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Edit a comment",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"content_modified\": \"Commentaire modifié\",\n\t\"date_modified\": \"2020-05-03T14:57:30.207Z\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/comments/:id/update",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"comments",
+										":id",
+										"update"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb08a080b66b0869c825480"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Edit a comment",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"content_modified\": \"Commentaire modifié\",\n\t\"date_modified\": \"2020-05-03T14:57:30.207Z\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/comments/:id/update",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"comments",
+												":id",
+												"update"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5eb08a080b66b0869c825480"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Delete a comment",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/comments/:id/delete",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"comments",
+										":id",
+										"delete"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb08a080b66b0869c825480"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete a comment",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/comments/:id/delete",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"comments",
+												":id",
+												"delete"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5eb08a080b66b0869c825480"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "discussions",
+					"item": [
+						{
+							"name": "Get all discussions",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/discussions",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"discussions"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get all discussions",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/discussions",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"discussions"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get a discussion",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/discussions/:id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"discussions",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eaed5dac689cfbc9cd481fc"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get a discussion",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/discussions/:id",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"discussions",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5eaed5dac689cfbc9cd481fc"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "129"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"81-DF4PO8rfgBJ4w7zuh4gCJXSgIsM\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 16:36:34 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"discussion\": {\n            \"enable\": true,\n            \"type\": \"event\",\n            \"date_creation\": \"2020-05-03T14:31:54.696Z\",\n            \"id\": \"5eaed5dac689cfbc9cd481fc\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Get all messages in discussion",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/discussions/:id/messages",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"discussions",
+										":id",
+										"messages"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eaed5dac689cfbc9cd481fc"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get all messages in discussion",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3030/v1/discussions/:id/messages",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3030",
+											"path": [
+												"v1",
+												"discussions",
+												":id",
+												"messages"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5eaed5dac689cfbc9cd481fc"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "34"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"22-nR1emez0TYuDOT8NS2dR97KRVAU\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 16:36:53 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"total\": 0,\n        \"messages\": []\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Create a discussion",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"type\": \"group\",\n\t\"ref\": \"5e90d0c19a4ec681e260c763\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/discussions/create",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"discussions",
+										"create"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Create a discussion event",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"type\": \"group\",\n\t\"ref\": \"event\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/discussions/create",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"discussions",
+												"create"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								},
+								{
+									"name": "Create a discussion group",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"type\": \"group\",\n\t\"ref\": \"5e90d0c19a4ec681e260c763\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/discussions/create",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"discussions",
+												"create"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Edit a discussion",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"type\": \"event\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/discussions/:id/update",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"discussions",
+										":id",
+										"update"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebd74bba521019a95efb93d"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Edit a discussion",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"type\": \"event\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/discussions/:id/update",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"discussions",
+												":id",
+												"update"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebd74bba521019a95efb93d"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "162"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"a2-FCmmOHcwIM1VH5QCFzGYPAPiZoc\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 16:42:23 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"discussion\": {\n            \"enable\": true,\n            \"type\": \"event\",\n            \"ref\": \"5e90d0c19a4ec681e260c763\",\n            \"date_creation\": \"2020-05-14T16:41:31.123Z\",\n            \"id\": \"5ebd74bba521019a95efb93d\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete a discussion",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/discussions/:id/delete",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"discussions",
+										":id",
+										"delete"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebd74bba521019a95efb93d"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete a discussion",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/discussions/:id/delete",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"discussions",
+												":id",
+												"delete"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebd74bba521019a95efb93d"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "events",
+					"item": [
+						{
+							"name": "Get all events",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/events",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"events"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get all events",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/events",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"events"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get an event",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/events/:id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"events",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebd77ba25c1259cda20b793"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get an event",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/events/:id",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"events",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebd77ba25c1259cda20b793"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "343"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"157-bswHhkK5uHD3pOZr2uMozMaDY8Q\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 16:54:34 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"event\": {\n            \"description\": \"Description courte\",\n            \"date_end\": \"2020-05-14T16:30:00.000Z\",\n            \"location\": \"Ici\",\n            \"cover_image\": null,\n            \"public\": true,\n            \"shopping_list\": false,\n            \"tickets\": false,\n            \"managers\": [\n                \"5e907efcf4e1766b67071ff9\"\n            ],\n            \"members\": [],\n            \"enable\": true,\n            \"name\": \"Mon evenement\",\n            \"date_begin\": \"2020-05-14T18:00:00.000Z\",\n            \"id\": \"5ebd77ba25c1259cda20b793\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Create an event",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"Mon evenement\",\n\t\"description\": \"Description courte\",\n\t\"date_begin\": \"2020-05-14T20:00:00\",\n\t\"date_end\": \"2020-05-14T18:30:00\",\n\t\"location\": \"Ici\",\n\t\"public\": true,\n\t\"managers\": [\"5e907efcf4e1766b67071ff9\"]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/events/create",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"events",
+										"create"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Create a public event",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"name\": \"Mon evenement\",\n\t\"description\": \"Description courte\",\n\t\"date_begin\": \"2020-05-14T20:00:00\",\n\t\"date_end\": \"2020-05-14T18:30:00\",\n\t\"location\": \"Ici\",\n\t\"public\": true,\n\t\"managers\": [\"5e907efcf4e1766b67071ff9\"]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/events/create",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"events",
+												"create"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "343"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"157-bswHhkK5uHD3pOZr2uMozMaDY8Q\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 16:54:18 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"event\": {\n            \"description\": \"Description courte\",\n            \"date_end\": \"2020-05-14T16:30:00.000Z\",\n            \"location\": \"Ici\",\n            \"cover_image\": null,\n            \"public\": true,\n            \"shopping_list\": false,\n            \"tickets\": false,\n            \"managers\": [\n                \"5e907efcf4e1766b67071ff9\"\n            ],\n            \"members\": [],\n            \"enable\": true,\n            \"name\": \"Mon evenement\",\n            \"date_begin\": \"2020-05-14T18:00:00.000Z\",\n            \"id\": \"5ebd77ba25c1259cda20b793\"\n        }\n    }\n}"
+								},
+								{
+									"name": "Create a private event",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"name\": \"Mon evenement\",\n\t\"description\": \"Description courte\",\n\t\"date_begin\": \"2020-05-14T20:00:00\",\n\t\"date_end\": \"2020-05-14T18:30:00\",\n\t\"location\": \"Ici\",\n\t\"public\": false,\n\t\"managers\": [\"5e907efcf4e1766b67071ff9\"]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/events/create",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"events",
+												"create"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Join an event",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"user_id\": \"5e907efcf4e1766b67071ff9\",\n\t\"manager\": false\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/events/:id/join",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"events",
+										":id",
+										"join"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebd77ba25c1259cda20b793"
+										}
+									]
+								},
+								"description": "Rejoindre un évenement (ajouter {\"manager\": true} pour définir en tant que managger)"
+							},
+							"response": [
+								{
+									"name": "Join an event as an user",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"user_id\": \"5e907efcf4e1766b67071ff9\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/events/:id/join",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"events",
+												":id",
+												"join"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebd77ba25c1259cda20b793"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "61"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"3d-AXhPTUvx70WpP+6UrzD/XtwkBwM\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 16:55:29 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": {\n        \"code\": 400,\n        \"message\": \"User already in this event\"\n    }\n}"
+								},
+								{
+									"name": "Join an event as a manager",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"user_id\": \"5e907efcf4e1766b67071ff9\",\n\t\"manager\": true\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/events/:id/join",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"events",
+												":id",
+												"join"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebd77ba25c1259cda20b793"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "61"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"3d-AXhPTUvx70WpP+6UrzD/XtwkBwM\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 16:55:29 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": {\n        \"code\": 400,\n        \"message\": \"User already in this event\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Leave an event",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"user_id\": \"5e907efcf4e1766b67071ff9\",\n\t\"manager\": false\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/events/:id/leave",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"events",
+										":id",
+										"leave"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebd77ba25c1259cda20b793"
+										}
+									]
+								},
+								"description": "Quitter un évenement (ajouter {\"manager\": true} pour définir en tant que managger)"
+							},
+							"response": [
+								{
+									"name": "Leave an event as an user",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"user_id\": \"5e907efcf4e1766b67071ff9\",\n\t\"manager\": false\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/events/:id/leave",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"events",
+												":id",
+												"leave"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebd77ba25c1259cda20b793"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "57"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"39-Kq5k1ST9EU3HAIeskNgqtWp4aLM\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 16:57:32 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": {\n        \"code\": 400,\n        \"message\": \"User not in this event\"\n    }\n}"
+								},
+								{
+									"name": "Leave an event as a manager",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"user_id\": \"5e907efcf4e1766b67071ff9\",\n\t\"manager\": true\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/events/:id/leave",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"events",
+												":id",
+												"leave"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebd77ba25c1259cda20b793"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "57"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"39-Kq5k1ST9EU3HAIeskNgqtWp4aLM\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 16:57:20 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": {\n        \"code\": 400,\n        \"message\": \"User not in this event\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Edit an event",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"Mon evenement renommé\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/events/:id/update",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"events",
+										":id",
+										"update"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebd77ba25c1259cda20b793"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Edit an event",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"name\": \"Mon evenement renommé\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/events/:id/update",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"events",
+												":id",
+												"update"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebd77ba25c1259cda20b793"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "724"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"2d4-eHUGIw8Escx4CrIpic6E61K8t2s\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 16:58:09 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"event\": {\n            \"description\": \"Description courte\",\n            \"date_end\": \"2020-05-14T16:30:00.000Z\",\n            \"location\": \"Ici\",\n            \"cover_image\": null,\n            \"public\": true,\n            \"shopping_list\": false,\n            \"tickets\": false,\n            \"managers\": [],\n            \"members\": [\n                {\n                    \"status\": true,\n                    \"image_profile\": \"https://www.breizh-info.com/wp-content/uploads/2019/12/chewbacca.jpg\",\n                    \"first_name\": \"Mikhael\",\n                    \"last_name\": \"Bailly\",\n                    \"username\": \"Mikheull\",\n                    \"email\": \"mikhae.bailly@gmail.com\",\n                    \"password\": \"4813494d137e1631bba301d5acab6e7bb7aa74ce1185d456565ef51d737677b2\",\n                    \"date_creation\": \"2020-04-10T14:13:16.570Z\",\n                    \"date_modified\": \"2020-04-10T14:13:16.570Z\",\n                    \"id\": \"5e907efcf4e1766b67071ff9\"\n                }\n            ],\n            \"enable\": true,\n            \"name\": \"Mon evenement renommé\",\n            \"date_begin\": \"2020-05-14T18:00:00.000Z\",\n            \"id\": \"5ebd77ba25c1259cda20b793\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete an event",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/events/:id/delete",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"events",
+										":id",
+										"delete"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebd77ba25c1259cda20b793"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete an event",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/events/:id/delete",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"events",
+												":id",
+												"delete"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebd77ba25c1259cda20b793"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "47"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"2f-OG5y2nf9AweH/jY4N/75Y2X3q5U\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 16:58:27 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": {\n        \"code\": 400,\n        \"message\": \"ID not found\"\n    }\n}"
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "groups",
+					"item": [
+						{
+							"name": "Get all groups",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/groups",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"groups"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get all groups",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/groups",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"groups"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get a group",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/groups/:id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"groups",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5e971452559f045d7439b9f2"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get a group",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/groups/:id",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"groups",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5e971452559f045d7439b9f2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "343"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"157-Ox/Cv+L7xXMqVOKA/USt/PzUFd0\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:06:13 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"group\": {\n            \"permissions\": {\n                \"member_publish\": true,\n                \"member_create_event\": false\n            },\n            \"description\": \"Petite description du groupe\",\n            \"icon\": null,\n            \"cover_image\": null,\n            \"group_type\": \"private\",\n            \"managers\": [\n                \"5e907efcf4e1766b67071ff9\"\n            ],\n            \"members\": [],\n            \"enable\": true,\n            \"name\": \"Groupe #1\",\n            \"date_begin\": \"2020-04-15T14:03:00.000Z\",\n            \"id\": \"5e971452559f045d7439b9f2\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Create a group",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"Mon groupe\",\n\t\"description\": \"Petite description du groupe\",\n\t\"date_begin\": \"2020-04-15T16:03:00\",\n\t\"group_type\": \"private\",\n\t\"managers\": [\"5e907efcf4e1766b67071ff9\"],\n\t\"permissions\": {\n\t\t\"member_publish\": true,\n\t\t\"member_create_event\": false\n\t}\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/groups/create",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"groups",
+										"create"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Create a public group",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"name\": \"Mon groupe\",\n\t\"description\": \"Petite description du groupe\",\n\t\"date_begin\": \"2020-04-15T16:03:00\",\n\t\"group_type\": \"public\",\n\t\"managers\": [\"5e907efcf4e1766b67071ff9\"],\n\t\"permissions\": {\n\t\t\"member_publish\": true,\n\t\t\"member_create_event\": false\n\t}\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/groups/create",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"groups",
+												"create"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "344"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"158-6L+iw3g3jYbm9Wld0putBQLBuPc\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:06:49 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"group\": {\n            \"permissions\": {\n                \"member_publish\": true,\n                \"member_create_event\": false\n            },\n            \"description\": \"Petite description du groupe\",\n            \"icon\": null,\n            \"cover_image\": null,\n            \"group_type\": \"private\",\n            \"managers\": [\n                \"5e907efcf4e1766b67071ff9\"\n            ],\n            \"members\": [],\n            \"enable\": true,\n            \"name\": \"Mon groupe\",\n            \"date_begin\": \"2020-04-15T14:03:00.000Z\",\n            \"id\": \"5ebd7aa950e2a7a0937c7f13\"\n        }\n    }\n}"
+								},
+								{
+									"name": "Create a private group",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"name\": \"Mon groupe\",\n\t\"description\": \"Petite description du groupe\",\n\t\"date_begin\": \"2020-04-15T16:03:00\",\n\t\"group_type\": \"private\",\n\t\"managers\": [\"5e907efcf4e1766b67071ff9\"],\n\t\"permissions\": {\n\t\t\"member_publish\": true,\n\t\t\"member_create_event\": false\n\t}\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/groups/create",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"groups",
+												"create"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "344"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"158-6L+iw3g3jYbm9Wld0putBQLBuPc\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:06:49 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"group\": {\n            \"permissions\": {\n                \"member_publish\": true,\n                \"member_create_event\": false\n            },\n            \"description\": \"Petite description du groupe\",\n            \"icon\": null,\n            \"cover_image\": null,\n            \"group_type\": \"private\",\n            \"managers\": [\n                \"5e907efcf4e1766b67071ff9\"\n            ],\n            \"members\": [],\n            \"enable\": true,\n            \"name\": \"Mon groupe\",\n            \"date_begin\": \"2020-04-15T14:03:00.000Z\",\n            \"id\": \"5ebd7aa950e2a7a0937c7f13\"\n        }\n    }\n}"
+								},
+								{
+									"name": "Create a secret group",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"name\": \"Mon groupe\",\n\t\"description\": \"Petite description du groupe\",\n\t\"date_begin\": \"2020-04-15T16:03:00\",\n\t\"group_type\": \"secret\",\n\t\"managers\": [\"5e907efcf4e1766b67071ff9\"],\n\t\"permissions\": {\n\t\t\"member_publish\": true,\n\t\t\"member_create_event\": false\n\t}\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/groups/create",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"groups",
+												"create"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "344"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"158-6L+iw3g3jYbm9Wld0putBQLBuPc\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:06:49 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"group\": {\n            \"permissions\": {\n                \"member_publish\": true,\n                \"member_create_event\": false\n            },\n            \"description\": \"Petite description du groupe\",\n            \"icon\": null,\n            \"cover_image\": null,\n            \"group_type\": \"private\",\n            \"managers\": [\n                \"5e907efcf4e1766b67071ff9\"\n            ],\n            \"members\": [],\n            \"enable\": true,\n            \"name\": \"Mon groupe\",\n            \"date_begin\": \"2020-04-15T14:03:00.000Z\",\n            \"id\": \"5ebd7aa950e2a7a0937c7f13\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Invite in a group",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"type\": \"group\",\n\t\"role\": \"member\",\n\t\"id_receiver\": \"5e90dbffb91b1613ba47c5101\",\n\t\"id_sender\": \"5e907efcf4e1766b67071ff9\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/groups/:id/invite",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"groups",
+										":id",
+										"invite"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebd7aa950e2a7a0937c7f13"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Invite in a group",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"type\": \"group\",\n\t\"role\": \"member\",\n\t\"id_receiver\": \"5e90dbffb91b1613ba47c5101\",\n\t\"id_sender\": \"5e907efcf4e1766b67071ff9\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/groups/:id/invite",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"groups",
+												":id",
+												"invite"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebd7aa950e2a7a0937c7f13"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "56"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"38-fMZsjGxAMxXBVF+ag54hc753WJw\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:10:27 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": {\n        \"code\": 400,\n        \"message\": \"An error has occurred\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Join a group",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"user_id\": \"5e90dbffb91b1613ba47c5101\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/groups/:id/join",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"groups",
+										":id",
+										"join"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5e971452559f045d7439b9f2"
+										}
+									]
+								},
+								"description": "Rejoindre un groupe (ajouter {\"manager\": true} pour définir en tant que managger)"
+							},
+							"response": [
+								{
+									"name": "Join a group",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"user_id\": \"5e90dbffb91b1613ba47c5101\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/groups/:id/join",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"groups",
+												":id",
+												"join"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5e971452559f045d7439b9f2"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "66"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"42-2nkKdodJxsRr7a9mE4wf6GT3REc\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:11:03 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": {\n        \"code\": 400,\n        \"message\": \"Failed to connect to this group\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Leave a group",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"user_id\": \"5e90dbffb91b1613ba47c5101\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/groups/:id/leave",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"groups",
+										":id",
+										"leave"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5e971452559f045d7439b9f2"
+										}
+									]
+								},
+								"description": "Quitter un groupe (ajouter {\"manager\": true} pour définir en tant que managger)"
+							},
+							"response": [
+								{
+									"name": "Leave a group",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"user_id\": \"5e90dbffb91b1613ba47c5101\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/groups/:id/leave",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"groups",
+												":id",
+												"leave"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5e971452559f045d7439b9f2"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "57"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"39-OSzzi4W8g9Zezl0dDsgKct3r0ZI\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:11:27 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": {\n        \"code\": 400,\n        \"message\": \"User not in this group\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Edit a group",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"Groupe YHJ1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/groups/:id/update",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"groups",
+										":id",
+										"update"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebd7aa950e2a7a0937c7f13"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Edit a group",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"name\": \"Groupe YHJ1\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/groups/:id/update",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"groups",
+												":id",
+												"update"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebd7aa950e2a7a0937c7f13"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "345"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"159-Gfdrcq8GTAwetiTH8oFKNCX6QTs\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:11:55 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"group\": {\n            \"permissions\": {\n                \"member_publish\": true,\n                \"member_create_event\": false\n            },\n            \"description\": \"Petite description du groupe\",\n            \"icon\": null,\n            \"cover_image\": null,\n            \"group_type\": \"private\",\n            \"managers\": [\n                \"5e907efcf4e1766b67071ff9\"\n            ],\n            \"members\": [],\n            \"enable\": true,\n            \"name\": \"Groupe YHJ1\",\n            \"date_begin\": \"2020-04-15T14:03:00.000Z\",\n            \"id\": \"5ebd7aa950e2a7a0937c7f13\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete a group",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/groups/:id/delete",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"groups",
+										":id",
+										"delete"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebd7aa950e2a7a0937c7f13"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete a group",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/groups/:id/delete",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"groups",
+												":id",
+												"delete"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebd7aa950e2a7a0937c7f13"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "69"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"45-8d8zERlWYaEub/294qutSxro27w\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:12:07 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"code\": 200,\n        \"message\": \"This group has successfully deleted\"\n    }\n}"
+								},
+								{
+									"name": "Delete a group",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/groups/:id/delete",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"groups",
+												":id",
+												"delete"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebd7b0650e2a7a0937c7f14"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "69"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"45-8d8zERlWYaEub/294qutSxro27w\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:08:46 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"code\": 200,\n        \"message\": \"This group has successfully deleted\"\n    }\n}"
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "invitations",
+					"item": [
+						{
+							"name": "Get all invitations",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/invitations",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"invitations"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get all invitations",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/invitations",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"invitations"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get an invitation",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/invitations/:id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"invitations",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5e971d868ac2a46307343d9a"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get an invitation",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/invitations/:id",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"invitations",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5e971d868ac2a46307343d9a"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "26"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1a-6/5kzeiIDtkXRQ5eS0JurJAhQi4\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:23:15 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"invitation\": []\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Create an invitation",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"type\": \"group\",\n\t\"id_destination\": \"5e971452559f045d7439b9f2\",\n\t\"role\": \"member\",\n\t\"id_receiver\": \"5e907efcf4e1766b67071ff9\",\n\t\"id_sender\": \"5e907efcf4e1766b67071ff9\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/invitations/create",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"invitations",
+										"create"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Create a group invitation",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"type\": \"group\",\n\t\"id_destination\": \"5e971452559f045d7439b9f2\",\n\t\"role\": \"member\",\n\t\"id_receiver\": \"5e907efcf4e1766b67071ff9\",\n\t\"id_sender\": \"5e907efcf4e1766b67071ff9\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/invitations/create",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"invitations",
+												"create"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "282"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"11a-/bVsDC/660k5N5invGUHo0R9L8A\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:17:22 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"invitation\": {\n            \"role\": \"member\",\n            \"id_sender\": \"5e907efcf4e1766b67071ff9\",\n            \"date_end\": null,\n            \"enable\": true,\n            \"type\": \"group\",\n            \"id_destination\": \"5e971452559f045d7439b9f2\",\n            \"id_receiver\": \"5e907efcf4e1766b67071ff9\",\n            \"date_begin\": \"2020-05-14T17:17:22.312Z\",\n            \"id\": \"5ebd7d22b6d660a2c13ed64e\"\n        }\n    }\n}"
+								},
+								{
+									"name": "Create an event invitation",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"type\": \"group\",\n\t\"id_destination\": \"5e971452559f045d7439b9f2\",\n\t\"role\": \"member\",\n\t\"id_receiver\": \"5e907efcf4e1766b67071ff9\",\n\t\"id_sender\": \"5e907efcf4e1766b67071ff9\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/invitations/create",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"invitations",
+												"create"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "282"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"11a-/bVsDC/660k5N5invGUHo0R9L8A\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:17:22 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"invitation\": {\n            \"role\": \"member\",\n            \"id_sender\": \"5e907efcf4e1766b67071ff9\",\n            \"date_end\": null,\n            \"enable\": true,\n            \"type\": \"event\",\n            \"id_destination\": \"5e971452559f045d7439b9f2\",\n            \"id_receiver\": \"5e907efcf4e1766b67071ff9\",\n            \"date_begin\": \"2020-05-14T17:17:22.312Z\",\n            \"id\": \"5ebd7d22b6d660a2c13ed64e\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Edit an invitation",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"date_end\": null,\n\t\"enable\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/invitations/:id/update",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"invitations",
+										":id",
+										"update"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5e972026329b0863ba031e4c"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Edit an invitation",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"date_end\": null,\n\t\"enable\": true\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/invitations/:id/update",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"invitations",
+												":id",
+												"update"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5e972026329b0863ba031e4c"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "47"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"2f-OG5y2nf9AweH/jY4N/75Y2X3q5U\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:21:59 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": {\n        \"code\": 400,\n        \"message\": \"ID not found\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete an invitation",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/invitations/:id/delete",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"invitations",
+										":id",
+										"delete"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebd7d22b6d660a2c13ed64e"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete an invitation",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/invitations/:id/delete",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"invitations",
+												":id",
+												"delete"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5e972026329b0863ba031e4c"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "47"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"2f-OG5y2nf9AweH/jY4N/75Y2X3q5U\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:22:08 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": {\n        \"code\": 400,\n        \"message\": \"ID not found\"\n    }\n}"
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "messages",
+					"item": [
+						{
+							"name": "Get all messages",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/messages",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"messages"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get all messages",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/messages",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"messages"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get a message",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/messages/:id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"messages",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebd802bde0d98a6226130d3"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get a message",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/messages/:id",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"messages",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebd802bde0d98a6226130d3"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get all comments of a message",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/messages/:id/comments",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"messages",
+										":id",
+										"comments"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebd8090f480b4a633b357c6"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get all comments of a message",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/messages/:id/comments",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"messages",
+												":id",
+												"comments"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebd8090f480b4a633b357c6"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "34"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"22-H+kpU90MVv9ejJTwMlyUtUNkKjg\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:32:04 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"total\": 0,\n        \"comments\": []\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Create a message",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"author_id\": \"5e907efcf4e1766b67071ff9\",\n\t\"discussion_ref\": \"5eaed5dac689cfbc9cd481fc\",\n\t\"content\": \"hello world\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/messages/create",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"messages",
+										"create"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Create a message",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"author_id\": \"5e907efcf4e1766b67071ff9\",\n\t\"discussion_ref\": \"5eaed5dac689cfbc9cd481fc\",\n\t\"content\": \"hello world\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/messages/create",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"messages",
+												"create"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "263"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"107-mt+BwtSkNvg7RmCs40sJqVyHmRA\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:30:19 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"message\": {\n            \"content_modified\": null,\n            \"date_modified\": null,\n            \"enable\": true,\n            \"author_id\": \"5e907efcf4e1766b67071ff9\",\n            \"discussion_ref\": \"5eaed5dac689cfbc9cd481fc\",\n            \"content\": \"hello world\",\n            \"date_creation\": \"2020-05-14T17:30:19.303Z\",\n            \"id\": \"5ebd802bde0d98a6226130d3\"\n        }\n    }\n}"
+								},
+								{
+									"name": "Create a message",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"author_id\": \"5e907efcf4e1766b67071ff9\",\n\t\"discussion_ref\": \"5eaed5dac689cfbc9cd481fc\",\n\t\"content\": \"hello world\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/messages/create",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"messages",
+												"create"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "263"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"107-mt+BwtSkNvg7RmCs40sJqVyHmRA\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:30:19 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"message\": {\n            \"content_modified\": null,\n            \"date_modified\": null,\n            \"enable\": true,\n            \"author_id\": \"5e907efcf4e1766b67071ff9\",\n            \"discussion_ref\": \"5eaed5dac689cfbc9cd481fc\",\n            \"content\": \"hello world\",\n            \"date_creation\": \"2020-05-14T17:30:19.303Z\",\n            \"id\": \"5ebd802bde0d98a6226130d3\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Edit a message",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"content_modified\": \"Hello world modified\",\n\t\"date_modified\": \"2020-05-03T14:57:30.207Z\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/messages/:id/update",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"messages",
+										":id",
+										"update"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebd802bde0d98a6226130d3"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Edit a message",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"content_modified\": \"Hello world modified\",\n\t\"date_modified\": \"2020-05-03T14:57:30.207Z\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/messages/:id/update",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"messages",
+												":id",
+												"update"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebd802bde0d98a6226130d3"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "382"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"17e-H8EzRE721V8cFvMH9urJEiQp1Nw\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:31:34 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"message\": {\n            \"content_modified\": \"Hello world modified\",\n            \"date_modified\": \"2020-05-03T14:57:30.207Z\",\n            \"enable\": true,\n            \"author_id\": \"5e907efcf4e1766b67071ff9\",\n            \"discussion_ref\": {\n                \"enable\": true,\n                \"type\": \"event\",\n                \"date_creation\": \"2020-05-03T14:31:54.696Z\",\n                \"id\": \"5eaed5dac689cfbc9cd481fc\"\n            },\n            \"content\": \"hello world\",\n            \"date_creation\": \"2020-05-14T17:30:19.303Z\",\n            \"id\": \"5ebd802bde0d98a6226130d3\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete a message",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/messages/:id/delete",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"messages",
+										":id",
+										"delete"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebd802bde0d98a6226130d3"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete a message",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/messages/:id/delete",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"messages",
+												":id",
+												"delete"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebd802bde0d98a6226130d3"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "47"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"2f-OG5y2nf9AweH/jY4N/75Y2X3q5U\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:31:48 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": {\n        \"code\": 400,\n        \"message\": \"ID not found\"\n    }\n}"
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "polls",
+					"item": [
+						{
+							"name": "Get all polls",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/polls",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"polls"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get all polls",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/polls",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"polls"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get a poll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/polls/:id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"polls",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb167fcc0584a30ba3ebec9"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get a poll",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/polls/:id",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"polls",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5eb167fcc0584a30ba3ebec9"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "553"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"229-srGD01omWVY+Qjkx5aDcEgLey1k\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 18:39:23 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"poll\": {\n        \"date_end\": null,\n        \"enable\": true,\n        \"author_id\": {\n            \"status\": true,\n            \"image_profile\": \"https://www.breizh-info.com/wp-content/uploads/2019/12/chewbacca.jpg\",\n            \"first_name\": \"Mikhael\",\n            \"last_name\": \"Bailly\",\n            \"username\": \"Mikheull\",\n            \"email\": \"mikhae.bailly@gmail.com\",\n            \"password\": \"4813494d137e1631bba301d5acab6e7bb7aa74ce1185d456565ef51d737677b2\",\n            \"date_creation\": \"2020-04-10T14:13:16.570Z\",\n            \"date_modified\": \"2020-04-10T14:13:16.570Z\",\n            \"id\": \"5e907efcf4e1766b67071ff9\"\n        },\n        \"title\": \"Sondage modifié\",\n        \"date_creation\": \"2020-05-05T13:19:56.860Z\",\n        \"id\": \"5eb167fcc0584a30ba3ebec9\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Get all questions in a poll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/polls/:id/questions",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"polls",
+										":id",
+										"questions"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb16bbd234475336e0112dc"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get all questions in a poll",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/polls/:id/questions",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"polls",
+												":id",
+												"questions"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5eb16bbd234475336e0112dc"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get all answers of a question in a poll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/polls/:id/questions/:question_id/answers",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"polls",
+										":id",
+										"questions",
+										":question_id",
+										"answers"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb16bbd234475336e0112dc"
+										},
+										{
+											"key": "question_id",
+											"value": "5eb1779416036a3ab64ce784"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get all answers of a question in a poll",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/polls/:id/questions/:question_id/answers",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"polls",
+												":id",
+												"questions",
+												":question_id",
+												"answers"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5eb16bbd234475336e0112dc"
+												},
+												{
+													"key": "question_id",
+													"value": "5eb1779416036a3ab64ce784"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Create a poll",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"author_id\": \"5e907efcf4e1766b67071ff9\",\n\t\"title\": \"Mon sondage\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/polls/create",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"polls",
+										"create"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Create a poll",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"author_id\": \"5e907efcf4e1766b67071ff9\",\n\t\"title\": \"Mon sondage\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/polls/create",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"polls",
+												"create"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Create a question in a poll",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"content\": \"Ma seconde question\",\n\t\"poll_ref\": \"5eb16bbd234475336e0112dc\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/polls/:id/questions/create",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"polls",
+										":id",
+										"questions",
+										"create"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb16bbd234475336e0112dc"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Create a question in a poll",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"content\": \"Ma seconde question\",\n\t\"poll_ref\": \"5eb16bbd234475336e0112dc\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/polls/:id/questions/create",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"polls",
+												":id",
+												"questions",
+												"create"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5eb16bbd234475336e0112dc"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Create an answer for a question in a poll",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"content\": \"Réponse #3\",\n\t\"poll_ref\": \"5eb16bbd234475336e0112dc\",\n\t\"question_ref\": \"5eb1779416036a3ab64ce784\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/polls/:id/questions/:id_question/answer/create",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"polls",
+										":id",
+										"questions",
+										":id_question",
+										"answer",
+										"create"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb16bbd234475336e0112dc"
+										},
+										{
+											"key": "id_question",
+											"value": "5eb1779416036a3ab64ce784"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Create an answer for a question in a poll",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"content\": \"Réponse #3\",\n\t\"poll_ref\": \"5eb16bbd234475336e0112dc\",\n\t\"question_ref\": \"5eb1779416036a3ab64ce784\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/polls/:id/questions/:id_question/answer/create",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"polls",
+												":id",
+												"questions",
+												":id_question",
+												"answer",
+												"create"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5eb16bbd234475336e0112dc"
+												},
+												{
+													"key": "id_question",
+													"value": "5eb1779416036a3ab64ce784"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "60"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"3c-QdNsu+9622W8whDJwBPUvfsdTXo\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 18:41:48 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": {\n        \"status\": 400,\n        \"message\": \"question does not exist\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Create a poll answer",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"author_id\": \"a\",\n\t\"answer\": \"Test\",\n\t\"poll_ref\": \"5eb16bbd234475336e0112dc\",\n\t\"question_ref\": \"5eb1779416036a3ab64ce784\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}v1/polls/:id/questions/:id_question/answer/define",
+									"host": [
+										"{{BASE_URL}}v1"
+									],
+									"path": [
+										"polls",
+										":id",
+										"questions",
+										":id_question",
+										"answer",
+										"define"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb16bbd234475336e0112dc"
+										},
+										{
+											"key": "id_question",
+											"value": "5eb1779416036a3ab64ce784"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Create a poll answer",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"author_id\": \"a\",\n\t\"answer\": \"Test\",\n\t\"poll_ref\": \"5eb16bbd234475336e0112dc\",\n\t\"question_ref\": \"5eb1779416036a3ab64ce784\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}v1/polls/:id/questions/:id_question/answer/define",
+											"host": [
+												"{{BASE_URL}}v1"
+											],
+											"path": [
+												"polls",
+												":id",
+												"questions",
+												":id_question",
+												"answer",
+												"define"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5eb16bbd234475336e0112dc"
+												},
+												{
+													"key": "id_question",
+													"value": "5eb1779416036a3ab64ce784"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Edit a poll",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"title\": \"Sondage modifié\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/polls/:id/update",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"polls",
+										":id",
+										"update"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb167fcc0584a30ba3ebec9"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Edit a poll",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"title\": \"Sondage modifié\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/polls/:id/update",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"polls",
+												":id",
+												"update"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5eb167fcc0584a30ba3ebec9"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Delete a poll",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/polls/:id/delete",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"polls",
+										":id",
+										"delete"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5eb167fcc0584a30ba3ebec1"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete a poll",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/polls/:id/delete",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"polls",
+												":id",
+												"delete"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5eb167fcc0584a30ba3ebec1"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "47"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"2f-OG5y2nf9AweH/jY4N/75Y2X3q5U\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 18:42:09 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": {\n        \"code\": 400,\n        \"message\": \"ID not found\"\n    }\n}"
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "shopping",
+					"item": [
+						{
+							"name": "Get all items in a shopping list",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/shoppings/:id/items",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"shoppings",
+										":id",
+										"items"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebbe780e02fc606c9eff903"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get all items in a shopping list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/shoppings/:id/items",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"shoppings",
+												":id",
+												"items"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebbe780e02fc606c9eff903"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "969"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"3c9-uQ2XY+fIz+ICy/y5wz+dOhGCwmI\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:41:05 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"total\": 2,\n        \"items\": [\n            {\n                \"enable\": true,\n                \"event_id\": {\n                    \"description\": \"Passons la quarantaine ensemble à distance\",\n                    \"date_end\": \"2020-04-12T16:30:00.000Z\",\n                    \"location\": \"Chez vous\",\n                    \"cover_image\": null,\n                    \"public\": true,\n                    \"shopping_list\": true,\n                    \"tickets\": true,\n                    \"managers\": [\n                        \"5e907efcf4e1766b67071ff9\"\n                    ],\n                    \"members\": [],\n                    \"enable\": true,\n                    \"name\": \"Quarantaine\",\n                    \"date_begin\": \"2020-04-10T18:00:00.000Z\",\n                    \"id\": \"5ebbe780e02fc606c9eff903\"\n                },\n                \"name\": \"Bierres\",\n                \"date_creation\": \"2020-05-13T13:08:52.643Z\",\n                \"id\": \"5ebbf164638f0712b7373cfa\"\n            },\n            {\n                \"enable\": true,\n                \"event_id\": {\n                    \"description\": \"Passons la quarantaine ensemble à distance\",\n                    \"date_end\": \"2020-04-12T16:30:00.000Z\",\n                    \"location\": \"Chez vous\",\n                    \"cover_image\": null,\n                    \"public\": true,\n                    \"shopping_list\": true,\n                    \"tickets\": true,\n                    \"managers\": [\n                        \"5e907efcf4e1766b67071ff9\"\n                    ],\n                    \"members\": [],\n                    \"enable\": true,\n                    \"name\": \"Quarantaine\",\n                    \"date_begin\": \"2020-04-10T18:00:00.000Z\",\n                    \"id\": \"5ebbe780e02fc606c9eff903\"\n                },\n                \"name\": \"Soda\",\n                \"date_creation\": \"2020-05-14T17:40:38.180Z\",\n                \"id\": \"5ebd829676c37da9a28588fd\"\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Get all reserved items in a shopping list",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/shoppings/:id/items/shoppers",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"shoppings",
+										":id",
+										"items",
+										"shoppers"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebbe780e02fc606c9eff903"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get all reserved items in a shopping list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/shoppings/:id/items/shoppers",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"shoppings",
+												":id",
+												"items",
+												"shoppers"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebbe780e02fc606c9eff903"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "31"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1f-rlTOIARHbqiXKZP9FqZBLITXkqA\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:41:31 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"total\": 0,\n        \"items\": []\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Enable a shopping list",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"event_id\": \"5ebbe780e02fc606c9eff903\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/shoppings/enable",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"shoppings",
+										"enable"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Enable a shopping list",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"event_id\": \"5ebbe780e02fc606c9eff903\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/shoppings/enable",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"shoppings",
+												"enable"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "370"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"172-R8wTL2L+Mr4G86zsYfI/tgcb93o\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:40:16 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"event\": {\n            \"description\": \"Passons la quarantaine ensemble à distance\",\n            \"date_end\": \"2020-04-12T16:30:00.000Z\",\n            \"location\": \"Chez vous\",\n            \"cover_image\": null,\n            \"public\": true,\n            \"shopping_list\": true,\n            \"tickets\": true,\n            \"managers\": [\n                \"5e907efcf4e1766b67071ff9\"\n            ],\n            \"members\": [],\n            \"enable\": true,\n            \"name\": \"Quarantaine\",\n            \"date_begin\": \"2020-04-10T18:00:00.000Z\",\n            \"id\": \"5ebbe780e02fc606c9eff903\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Disable a shopping list",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"event_id\": \"5ebbe780e02fc606c9eff903\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/shoppings/disable",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"shoppings",
+										"disable"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Disable a shopping list",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"event_id\": \"5ebbe780e02fc606c9eff903\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/shoppings/disable",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"shoppings",
+												"disable"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "371"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"173-3p78PpH48qLxEXpRe2xxyrqLHdo\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:40:24 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"event\": {\n            \"description\": \"Passons la quarantaine ensemble à distance\",\n            \"date_end\": \"2020-04-12T16:30:00.000Z\",\n            \"location\": \"Chez vous\",\n            \"cover_image\": null,\n            \"public\": true,\n            \"shopping_list\": false,\n            \"tickets\": true,\n            \"managers\": [\n                \"5e907efcf4e1766b67071ff9\"\n            ],\n            \"members\": [],\n            \"enable\": true,\n            \"name\": \"Quarantaine\",\n            \"date_begin\": \"2020-04-10T18:00:00.000Z\",\n            \"id\": \"5ebbe780e02fc606c9eff903\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Create an item in a shopping list",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"event_id\": \"5ebbe780e02fc606c9eff903\",\n\t\"name\": \"Soda\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/shoppings/items/create",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"shoppings",
+										"items",
+										"create"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Create an item in a shopping list",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"event_id\": \"5ebbe780e02fc606c9eff903\",\n\t\"name\": \"Soda\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/shoppings/items/create",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"shoppings",
+												"items",
+												"create"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "160"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"a0-W3KT3hDnOVu4Xboe8YFdaPYqyw8\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:40:38 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"item\": {\n            \"enable\": true,\n            \"event_id\": \"5ebbe780e02fc606c9eff903\",\n            \"name\": \"Soda\",\n            \"date_creation\": \"2020-05-14T17:40:38.180Z\",\n            \"id\": \"5ebd829676c37da9a28588fd\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Define an item on an user",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"event_id\": \"5ebbe780e02fc606c9eff903\",\n\t\"item_id\": \"5ebbf164638f0712b7373cfa\",\n\t\"quantity\": \"1\",\n\t\"hour\": \"2020-05-13T13:19:59.417Z\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/shoppings_item/:id/shoppers/define/:user_id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"shoppings_item",
+										":id",
+										"shoppers",
+										"define",
+										":user_id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebbf164638f0712b7373cfa"
+										},
+										{
+											"key": "user_id",
+											"value": "5e907efcf4e1766b67071ff9"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Define an item on an user",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"event_id\": \"5ebbe780e02fc606c9eff903\",\n\t\"item_id\": \"5ebbf164638f0712b7373cfa\",\n\t\"quantity\": \"1\",\n\t\"hour\": \"2020-05-13T13:19:59.417Z\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/shoppings_item/:id/shoppers/define/:user_id",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"shoppings_item",
+												":id",
+												"shoppers",
+												"define",
+												":user_id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebbf164638f0712b7373cfa"
+												},
+												{
+													"key": "user_id",
+													"value": "5e907efcf4e1766b67071ff9"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Remove an item from an user",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/shoppings_item/:id/shoppers/undefine/:user_id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"shoppings_item",
+										":id",
+										"shoppers",
+										"undefine",
+										":user_id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebbf164638f0712b7373cfa"
+										},
+										{
+											"key": "user_id",
+											"value": "5e907efcf4e1766b67071ff9"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Remove an item from an user",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/shoppings_item/:id/shoppers/undefine",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"shoppings_item",
+												":id",
+												"shoppers",
+												"undefine"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebbf164638f0712b7373cfa"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "49"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"31-VF5ZJ1NjlvN0R+1DNocn+NUOyu8\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:41:59 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"item\": {\n            \"n\": 1,\n            \"ok\": 1,\n            \"deletedCount\": 1\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Edit an item in a shopping list",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"renamed\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/shoppings_item/:id/update",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"shoppings_item",
+										":id",
+										"update"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebbf1a7dcc2b113367d6c73"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Edit an item in a shopping list",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"name\": \"renamed\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/shoppings_item/:id/update",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"shoppings_item",
+												":id",
+												"update"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebbf1a7dcc2b113367d6c73"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "47"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"2f-OG5y2nf9AweH/jY4N/75Y2X3q5U\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:42:15 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": {\n        \"code\": 400,\n        \"message\": \"ID not found\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete an item in a shopping list",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/shoppings_item/:id/delete",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"shoppings_item",
+										":id",
+										"delete"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebbf1a7dcc2b113367d6c73"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete an item in a shopping list",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/shoppings_item/:id/delete",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"shoppings_item",
+												":id",
+												"delete"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebbf1a7dcc2b113367d6c73"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "47"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"2f-OG5y2nf9AweH/jY4N/75Y2X3q5U\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:42:27 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": {\n        \"code\": 400,\n        \"message\": \"ID not found\"\n    }\n}"
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "tickets",
+					"item": [
+						{
+							"name": "Get all tickets in an event",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"event_id\": \"5ebbe780e02fc606c9eff903\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/tickets/types",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"tickets",
+										"types"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get all tickets in an event",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"event_id\": \"5ebbe780e02fc606c9eff903\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/tickets/types",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"tickets",
+												"types"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get all buyed tickets in a ticket-type",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"event_id\": \"5ebbe780e02fc606c9eff903\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/tickets/items/:id/buyed",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"tickets",
+										"items",
+										":id",
+										"buyed"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebd432fb8881f74efaa2b9c"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get all buyed tickets in a ticket-type",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"event_id\": \"5ebbe780e02fc606c9eff903\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/tickets/items/:id/buyed",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"tickets",
+												"items",
+												":id",
+												"buyed"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebd432fb8881f74efaa2b9c"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Enable tickets",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"event_id\": \"5ebbe780e02fc606c9eff903\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/tickets/enable",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"tickets",
+										"enable"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Enable tickets",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"event_id\": \"5ebbe780e02fc606c9eff903\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/tickets/enable",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"tickets",
+												"enable"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "370"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"172-R8wTL2L+Mr4G86zsYfI/tgcb93o\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:49:52 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"event\": {\n            \"description\": \"Passons la quarantaine ensemble à distance\",\n            \"date_end\": \"2020-04-12T16:30:00.000Z\",\n            \"location\": \"Chez vous\",\n            \"cover_image\": null,\n            \"public\": true,\n            \"shopping_list\": true,\n            \"tickets\": true,\n            \"managers\": [\n                \"5e907efcf4e1766b67071ff9\"\n            ],\n            \"members\": [],\n            \"enable\": true,\n            \"name\": \"Quarantaine\",\n            \"date_begin\": \"2020-04-10T18:00:00.000Z\",\n            \"id\": \"5ebbe780e02fc606c9eff903\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Disable tickets",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"event_id\": \"5ebbe780e02fc606c9eff903\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/tickets/disable",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"tickets",
+										"disable"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Disable tickets",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"event_id\": \"5ebbe780e02fc606c9eff903\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/tickets/disable",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"tickets",
+												"disable"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Create a ticket",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"event_id\": \"5ebbe780e02fc606c9eff903\",\n\t\"name\": \"Fosse #1\",\n\t\"price\": \"70\",\n\t\"quantity\": \"100\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/tickets/create",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"tickets",
+										"create"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Create a ticket",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"event_id\": \"5ebbe780e02fc606c9eff903\",\n\t\"name\": \"Fosse #1\",\n\t\"price\": \"70\",\n\t\"quantity\": \"100\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/tickets/create",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"tickets",
+												"create"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "215"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"d7-lM0CoQhff8ixUcmb683xQgJVpvs\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:50:13 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"ticket\": {\n            \"enable\": true,\n            \"event_id\": \"5ebbe780e02fc606c9eff903\",\n            \"name\": \"Fosse #1\",\n            \"price\": 70,\n            \"quantity\": \"0099-12-31T23:50:39.000Z\",\n            \"date_creation\": \"2020-05-14T17:50:13.315Z\",\n            \"id\": \"5ebd84d5af2b3fac9af5a1ea\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Buy a ticket",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"event_id\": \"5ebbe780e02fc606c9eff903\",\n\t\"ticket_id\": \"5ebd432fb8881f74efaa2b9c\",\n\t\"user_id\": \"5e907efcf4e1766b67071ff9\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/tickets/:id/buy",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"tickets",
+										":id",
+										"buy"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebd432fb8881f74efaa2b9c"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Buy a ticket",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"event_id\": \"5ebbe780e02fc606c9eff903\",\n\t\"ticket_id\": \"5ebd432fb8881f74efaa2b9c\",\n\t\"user_id\": \"5e907efcf4e1766b67071ff9\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/tickets/:id/buy",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"tickets",
+												":id",
+												"buy"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebd432fb8881f74efaa2b9c"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Unbuy a ticket",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"event_id\": \"5ebbe780e02fc606c9eff903\",\n\t\"ticket_id\": \"5ebd432fb8881f74efaa2b9c\",\n\t\"user_id\": \"5e907efcf4e1766b67071ff9\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/tickets/:id/unbuy",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"tickets",
+										":id",
+										"unbuy"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebd432fb8881f74efaa2b9c"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Unbuy a ticket",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"event_id\": \"5ebbe780e02fc606c9eff903\",\n\t\"ticket_id\": \"5ebd432fb8881f74efaa2b9c\",\n\t\"user_id\": \"5e907efcf4e1766b67071ff9\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/tickets/:id/unbuy",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"tickets",
+												":id",
+												"unbuy"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebd432fb8881f74efaa2b9c"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "users",
+					"item": [
+						{
+							"name": "Get all users",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/users",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"users"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get all users with query",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"query\": {\n\t\t\"first_name\": \"Mikhael\",\n\t\t\"last_name\": \"Bailly\"\n\t},\n\t\"sort\":{\n\t\t\"first_name\": -1\n\t}\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/users",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"users"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get a user",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/users/:id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5e907efcf4e1766b67071ff9"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get a user",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/users/:id",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"users",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5e907efcf4e1766b67071ff9"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "416"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1a0-5/aFVj16CROHtvyGmrEX10iRWBQ\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:53:49 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"user\": {\n            \"status\": true,\n            \"image_profile\": \"https://www.breizh-info.com/wp-content/uploads/2019/12/chewbacca.jpg\",\n            \"first_name\": \"Mikhael\",\n            \"last_name\": \"Bailly\",\n            \"username\": \"Mikheull\",\n            \"email\": \"mikhae.bailly@gmail.com\",\n            \"password\": \"4813494d137e1631bba301d5acab6e7bb7aa74ce1185d456565ef51d737677b2\",\n            \"date_creation\": \"2020-04-10T14:13:16.570Z\",\n            \"date_modified\": \"2020-04-10T14:13:16.570Z\",\n            \"id\": \"5e907efcf4e1766b67071ff9\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Create an user",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"first_name\": \"John\",\n\t\"last_name\": \"Doe\",\n\t\"username\": \"John_doe\",\n\t\"email\": \"john.doe@gmail.com\",\n\t\"password\": \"4813494d137e1631bba301d5acab6e7bb7aa74ce1185d456565ef51d737677b2\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/users/create",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"users",
+										"create"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Create an user",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"first_name\": \"John\",\n\t\"last_name\": \"Doe\",\n\t\"username\": \"John_doe\",\n\t\"email\": \"john.doe@gmail.com\",\n\t\"password\": \"4813494d137e1631bba301d5acab6e7bb7aa74ce1185d456565ef51d737677b2\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/users/create",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"users",
+												"create"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Edit an user",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\": \"Mikheull\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/users/:id/update",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"users",
+										":id",
+										"update"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebbe73ee02fc606c9eff901"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Edit an user",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"username\": \"Mikheull\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/users/:id/update",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"users",
+												":id",
+												"update"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebbe73ee02fc606c9eff901"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Delete an user",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/v1/users/:id/delete",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"users",
+										":id",
+										"delete"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebbe73ee02fc606c9eff901"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete an user",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/users/:id/delete",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"users",
+												":id",
+												"delete"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebbe73ee02fc606c9eff901"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "vmAjzxubLDjQvnjuVSsufEkBC6TXKmCiNdP8YN9v2G5mLnfymnvjM5Vv-evDGkQ6gC8Sgz6s8uhZ3BeUbGkXq",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "x-access-token",
+				"type": "string"
+			},
+			{
+				"key": "in",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "fe7e8e25-ace8-494f-b932-731c0d1c9b0c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "ec6224ca-686d-4324-bc50-d76bfd35ee3c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "7f4382ad-d208-4157-a449-d2f6db92c361",
+			"key": "BASE_URL",
+			"value": "http://localhost:3030",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
