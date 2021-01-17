@@ -1,0 +1,11 @@
+/Users/apple/Desktop/École /C#/rectangle_area/bin/Debug/netcoreapp3.1/rectangle_area
+/Users/apple/Desktop/École /C#/rectangle_area/bin/Debug/netcoreapp3.1/rectangle_area.deps.json
+/Users/apple/Desktop/École /C#/rectangle_area/bin/Debug/netcoreapp3.1/rectangle_area.runtimeconfig.json
+/Users/apple/Desktop/École /C#/rectangle_area/bin/Debug/netcoreapp3.1/rectangle_area.runtimeconfig.dev.json
+/Users/apple/Desktop/École /C#/rectangle_area/bin/Debug/netcoreapp3.1/rectangle_area.dll
+/Users/apple/Desktop/École /C#/rectangle_area/bin/Debug/netcoreapp3.1/rectangle_area.pdb
+/Users/apple/Desktop/École /C#/rectangle_area/obj/Debug/netcoreapp3.1/rectangle_area.csprojAssemblyReference.cache
+/Users/apple/Desktop/École /C#/rectangle_area/obj/Debug/netcoreapp3.1/rectangle_area.AssemblyInfoInputs.cache
+/Users/apple/Desktop/École /C#/rectangle_area/obj/Debug/netcoreapp3.1/rectangle_area.AssemblyInfo.cs
+/Users/apple/Desktop/École /C#/rectangle_area/obj/Debug/netcoreapp3.1/rectangle_area.dll
+/Users/apple/Desktop/École /C#/rectangle_area/obj/Debug/netcoreapp3.1/rectangle_area.pdb
