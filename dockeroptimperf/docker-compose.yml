@@ -1,0 +1,80 @@
+version: "2"
+
+services:
+
+    # Partie du frontend
+    frontend:
+        build:
+            context: ./frontend
+            dockerfile: Dockerfile
+        ports:
+            - "3000:3000"
+
+
+    # Partie du backend
+    backend:
+        build:
+            context: ./backend
+            dockerfile: Dockerfile
+        ports:
+            - "8080:8080"
+
+        environment:
+            MONGO_URI: mongodb+srv://root:root@cluster0-p7xv1.mongodb.net/mds?retryWrites=true&w=majority
+            # MONGO_URI: mongodb://localhost:27017/mds
+
+
+    # Partie base de données (replicaset)
+    mongo-setup:
+        container_name: mongo-setup
+        image: mongo:latest
+        restart: on-failure
+        networks:
+            default:
+        entrypoint: "bash setup.sh"
+        depends_on:
+            - mongoset1
+            - mongoset2
+            - mongoset3
+
+    mongoset1:
+        hostname: mongoset1
+        container_name: mongosetcont1
+        image: mongo:latest
+        expose:
+            - 27017
+        ports:
+            - 27017:27017
+        restart: always
+        entrypoint: [ "/usr/bin/mongod", "--bind_ip_all", "--replSet", "rs0", "--journal", "--dbpath", "/data/db", "--enableMajorityReadConcern", "false" ]
+        environment:
+            MONGO_URI: mongodb+srv://root:root@cluster0-p7xv1.mongodb.net/mds?retryWrites=true&w=majority
+            # MONGO_URI: mongodb://localhost:27017/mds
+                  
+    mongoset2:
+        hostname: mongoset2
+        container_name: mongosetcont2
+        image: mongo:latest
+        expose:
+            - 27017
+        ports:
+            - 27018:27017
+        restart: always
+        entrypoint: [ "/usr/bin/mongod", "--bind_ip_all", "--replSet", "rs0", "--journal", "--dbpath", "/data/db", "--enableMajorityReadConcern", "false" ]
+        environment:
+            MONGO_URI: mongodb+srv://root:root@cluster0-p7xv1.mongodb.net/mds?retryWrites=true&w=majority
+            # MONGO_URI: mongodb://localhost:27018/mds
+
+    mongoset3:
+        hostname: mongoset3
+        container_name: mongosetcont3
+        image: mongo:latest
+        expose:
+            - 27017
+        ports:
+            - 27019:27017
+        restart: always
+        entrypoint: [ "/usr/bin/mongod", "--bind_ip_all", "--replSet", "rs0", "--journal", "--dbpath", "/data/db", "--enableMajorityReadConcern", "false" ]
+        environment:
+            MONGO_URI: mongodb+srv://root:root@cluster0-p7xv1.mongodb.net/mds?retryWrites=true&w=majority
+            # MONGO_URI: mongodb://localhost:27019/mds
