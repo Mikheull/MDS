@@ -1,0 +1,18 @@
+version: "2"
+services:
+    frontend:
+        build: frontend
+        ports:
+            - "3000:3000"
+
+    backend:
+        build: backend
+        ports:
+            - "8080:8080"
+
+    mongodb:
+        image: mongo:latest
+        environment:
+            MONGO_INITDB_DATABASE: db_docker
+        ports:
+            - 27017:27017
