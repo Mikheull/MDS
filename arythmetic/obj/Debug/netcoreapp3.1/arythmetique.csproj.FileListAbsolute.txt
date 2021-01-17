@@ -1,0 +1,11 @@
+/Users/apple/Desktop/École /C#/arythmetique/bin/Debug/netcoreapp3.1/arythmetique
+/Users/apple/Desktop/École /C#/arythmetique/bin/Debug/netcoreapp3.1/arythmetique.deps.json
+/Users/apple/Desktop/École /C#/arythmetique/bin/Debug/netcoreapp3.1/arythmetique.runtimeconfig.json
+/Users/apple/Desktop/École /C#/arythmetique/bin/Debug/netcoreapp3.1/arythmetique.runtimeconfig.dev.json
+/Users/apple/Desktop/École /C#/arythmetique/bin/Debug/netcoreapp3.1/arythmetique.dll
+/Users/apple/Desktop/École /C#/arythmetique/bin/Debug/netcoreapp3.1/arythmetique.pdb
+/Users/apple/Desktop/École /C#/arythmetique/obj/Debug/netcoreapp3.1/arythmetique.csprojAssemblyReference.cache
+/Users/apple/Desktop/École /C#/arythmetique/obj/Debug/netcoreapp3.1/arythmetique.AssemblyInfoInputs.cache
+/Users/apple/Desktop/École /C#/arythmetique/obj/Debug/netcoreapp3.1/arythmetique.AssemblyInfo.cs
+/Users/apple/Desktop/École /C#/arythmetique/obj/Debug/netcoreapp3.1/arythmetique.dll
+/Users/apple/Desktop/École /C#/arythmetique/obj/Debug/netcoreapp3.1/arythmetique.pdb
