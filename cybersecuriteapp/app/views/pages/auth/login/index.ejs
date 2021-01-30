@@ -1,0 +1,46 @@
+<div class="flex flex-col items-center flex-1 h-full px-4 sm:px-0">
+    <div class="flex w-screen sm:mx-0">
+        <div class="hidden md:block md:w-2/4 h-screen" style="background: url('images/banners/login.jpg'); background-size: cover; background-position: center center;"></div>
+        
+        <div class="flex flex-col w-full md:w-2/4 p-4 h-screen">
+            <div class="flex flex-col flex-1 justify-center mb-8 md:px-20 sm:px-0">
+                
+                <div class="max-w-sm mx-auto px-6 w-full">
+                    <div class="relative flex flex-wrap">
+                        <div class="w-full relative">
+                            <div class="mt-6">
+                                <%if((locals.data && locals.data.response && locals.data.response.error) && data.response.error == true) {%>
+                                    <div class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4" role="alert">
+                                        <p class="font-bold">Attention</p>
+                                        <p><%= data.response.message %></p>
+                                    </div>
+                                <%}%>
+
+                                <div class="text-4xl text-gray-900 font-bold font-sans">
+                                    <h2>Connexion</h2>
+                                </div>
+                            
+                                <form class="mt-8" method="post">
+                                    <div class="mx-auto max-w-lg">
+                                        <div class="py-2">
+                                            <label for="email" class="px-1 text-sm text-gray-700">Email</label>
+                                            <input placeholder="john.doe@luqa.com" type="email" name="email" id="email" class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-red rounded py-2 px-3 focus:border-gray-600" required>
+                                        </div>
+                                        <div class="py-2">
+                                            <label for="password" class="px-1 text-sm text-gray-700">Mot de passe</label>
+                                            <input type="password" name="password" id="password" class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-red rounded py-2 px-3 focus:border-gray-600" required>
+                                        </div>
+                                        
+                                        <button class="font-sans mt-3 text-lg font-semibold bg-primary-500 w-full text-white rounded-lg px-6 py-3 block hover:text-white hover:bg-primary-600" name="login-btn">Connexion</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

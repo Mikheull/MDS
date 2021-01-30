@@ -1,0 +1,53 @@
+{
+  "name": "cybersecuriteapp",
+  "version": "1.0.0",
+  "description": "CyberSecurite &amp; Privileged Access Managment | 🏫 MyDigitalSchool Paris  This is a project connected to MongoDB Atlas - AutoBuild with docker-compose <br> *This project was done in school (5th year)*",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node app.js",
+    "build": "npx tailwindcss build public/assets/stylesheets/main.css -o public/build/stylesheets/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mikheull/cybersecuriteapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mikheull/cybersecuriteapp/issues"
+  },
+  "homepage": "https://github.com/Mikheull/cybersecuriteapp#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/polyfill": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "babel-core": "^6.26.3",
+    "nodemon": "^1.19.4"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "babel-node": "0.0.1-security",
+    "body-parser": "^1.19.0",
+    "cookie": "^0.4.1",
+    "cookie-parser": "^1.4.5",
+    "core-util-is": "^1.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.0",
+    "express-session": "^1.17.1",
+    "helmet": "^3.23.3",
+    "http": "0.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.0",
+    "nodemailer": "^6.4.11",
+    "querystring": "^0.2.0",
+    "sha256": "^0.2.0",
+    "socket.io": "^2.3.0",
+    "tailwindcss": "^1.8.10",
+    "uuid-token-generator": "^1.0.0"
+  }
+}

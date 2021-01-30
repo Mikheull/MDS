@@ -1,0 +1,7 @@
+<% if( locals.configuration.fs && locals.configuration.fs.libs ) { %>
+    <% if(locals.configuration.fs.libs.includes('moment')){ %> <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script><% } %>
+    <% if(locals.configuration.fs.libs.includes('nice-select')){ %> <script src="https://cdn.jsdelivr.net/npm/jquery-nice-select@1.1.0/js/jquery.nice-select.min.js"></script><% } %>
+    <% if(locals.configuration.fs.libs.includes('fontawesome')){ %> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css"><% } %>
+    <% if(locals.configuration.fs.libs.includes('jquery')){ %> <script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><% } %>
+    <% if(locals.configuration.fs.libs.includes('alpine')){ %> <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script><% } %>
+<% } %>

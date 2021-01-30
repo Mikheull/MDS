@@ -1,0 +1,23 @@
+{
+    "metas": {
+        "title": "Security - Page not found",
+        "description": "We are sorry, but the requested page was not found !"
+    },
+
+    "libs": [
+        "jquery",
+        "fontawesome",
+        "alpine"
+    ],
+
+    "css":{
+        "local": [],
+        "online": []
+    },
+
+    "javascript":{
+        "local": [],
+        "online": []
+    }
+
+}

@@ -1,0 +1,48 @@
+<%- include('../../../partials/header'); -%>
+
+<div class="min-h-screen">
+	<form method="post">
+		<div class="flex flex-wrap px-6 lg:px-24 mt-12"> 
+
+			<div class="w-full lg:w-2/4 px-4 mb-6">
+				<div class="bg-white border-t border-b sm:rounded border ">
+					
+					<div class="border-b">
+						<div class="flex justify-between px-2 -mb-px">
+							<div class="py-2 flex flex-col">
+								<label for="title" class="pr-4 mb-2 text-sm text-gray-700">Titre de l'article</label>
+								<input placeholder="Lorem Ipsum" type="text" name="title" id="title" class="appearance-none bg-grey-lighter text-grey-darker border border-red rounded py-2 px-3 focus:border-gray-600" required>
+							</div>
+						</div>
+					</div>
+
+					<div class="w-full">
+						<div class="p-2 w-full">
+							<label for="content" class="pr-4 mb-2 text-sm text-gray-700">Description</label>
+							<textarea placeholder="Description de l'article	" name="content" id="content" class="markdown-editor appearance-none bg-grey-lighter text-grey-darker border border-red rounded py-2 px-3 focus:border-gray-600 w-full h-32" required></textarea>
+						</div>
+					</div>
+
+					<div class="w-full">
+						<div class="flex justify-between px-2 -mb-px">
+							<div class="py-2 flex flex-col">
+								<label for="image" class="pr-4 mb-2 text-sm text-gray-700">Nom de la photo</label>
+								<input placeholder="Lorem Ipsum" type="text" name="image" id="image" class="appearance-none bg-grey-lighter text-grey-darker border border-red rounded py-2 px-3 focus:border-gray-600" required>
+							</div>
+						</div>
+					</div>
+
+					<div class="w-full">
+						<div class="flex justify-between px-2 mb-4">
+							<button class="font-sans mt-3 font-semibold bg-primary-500 w-auto text-white rounded-lg px-3 py-2 hover:bg-primary-600" name="create_product">Créer</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</form>
+</div>
+
+
+<%- include('../../../partials/footer'); -%>

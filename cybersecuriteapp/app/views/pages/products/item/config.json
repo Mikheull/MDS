@@ -1,0 +1,22 @@
+{
+    "metas": {
+        "title": "Security - Page de produit"
+    },
+
+    "libs": [
+        "jquery",
+        "fontawesome",
+        "alpine"
+    ],
+
+    "css":{
+        "local": [],
+        "online": []
+    },
+
+    "javascript":{
+        "local": [],
+        "online": []
+    }
+
+}

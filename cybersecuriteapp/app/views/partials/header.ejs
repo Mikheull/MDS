@@ -1,0 +1,93 @@
+<nav x-data="{ open: false }" @keydown.window.escape="open = false" class="border-b border-gray-200">
+	<div class="px-6 mx-auto lg:px-24">
+		<div class="flex items-center justify-between h-16">
+			<div class="flex items-center justify-between flex-grow">
+				<div class="flex-shrink-0 inline-flex">
+					<a href="<%= configuration.base_url %>" class="flex items-center">
+						<div id="page-caption" class="font-semibold text-gray-700 text-lg">
+							<img src="/images/svg/logo.svg" alt="Logo" class="w-6">
+						</div>
+					</a>
+					<div class="ml-6 hidden lg:block">
+						<div class="flex items-center">
+							<a href="<%= configuration.base_url %>" class="ml-4 flex flex-row font-medium <% if (configuration.current_page == 'home') { %> text-primary-400 <% }else{ %> text-gray-800 <% } %>">Accueil</a>
+							
+							<div @click.away="open = false" class="relative ml-3" x-data="{ open: false }">
+								<div>
+									<button @click="open = !open" class="flex items-center max-w-xs text-sm text-white rounded-full focus:outline-none focus:shadow-solid" id="products-menu" aria-label="Produits menu" aria-haspopup="true" x-bind:aria-expanded="open">
+										<p class="mr-2 font-medium <% if (configuration.current_page == 'products') { %> text-primary-400 <% }else{ %> text-gray-800 <% } %>">Produits</p>
+									</button>
+								</div>
+								<div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opaity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="z-50 absolute right-0 w-48 mt-2 origin-top-right rounded-md shadow-lg">
+									<div class="py-1 bg-white rounded-md shadow-xs">
+										<a href="<%= configuration.base_url %>products" class="flex flex-row items-center px-4 py-2 text-sm text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
+											<span class="ml-2">Liste</span>
+										</a>
+										<a href="<%= configuration.base_url %>products/new" class="flex flex-row items-center px-4 py-2 text-sm text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
+											<span class="ml-2">Créer</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hidden lg:block">
+				<div class="flex items-center ml-4 md:ml-6">
+					<% if(data.authenticated == false) { %>
+						<a href="<%= configuration.base_url %>login" class="ml-4 flex flex-row font-medium text-gray-800">Connexion</a>
+					<% } else { %>
+						<div @click.away="open = false" class="relative ml-3" x-data="{ open: false }">
+							<div>
+								<button @click="open = !open" class="flex items-center max-w-xs text-sm text-white rounded-full focus:outline-none focus:shadow-solid" id="user-menu" aria-label="User menu" aria-haspopup="true" x-bind:aria-expanded="open">
+									<p class="text-gray-700 mr-2 font-semibold">Mon compte</p>
+								</button>
+							</div>
+							<div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opaity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="z-50 absolute right-0 w-48 mt-2 origin-top-right rounded-md shadow-lg">
+								<div class="py-1 bg-white rounded-md shadow-xs">
+									<a href="<%= configuration.base_url %>profile" class="flex flex-row items-center px-4 py-2 text-sm text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
+										<span class="ml-2">Mon Profil</span>
+									</a>
+
+									<a href="<%= configuration.base_url %>logout" class="flex flex-row items-center px-4 py-2 text-sm text-red-500 hover:text-red-700 hover:bg-red-100 focus:outline-none focus:text-red-700 focus:bg-red-100">
+										<span class="ml-2">Déconnexion</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					<% } %>
+				</div>
+			</div>
+
+			<div class="flex -mr-2 lg:hidden">
+				<button @click="open = !open" class="inline-flex items-center justify-center p-2 text-gray-800" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" x-bind:aria-expanded="open">
+					<svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+						<path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+						<path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+					</svg>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Responsive -->
+	<div :class="{'block': open, 'hidden': !open}" class="hidden lg:hidden">
+		<div class="container px-6 mx-auto">
+			<div class="pt-2 pb-3">
+				<a href="<%= configuration.base_url %>" class="flex flex-row font-medium <% if (configuration.current_page == 'home') { %> text-primary-400 <% }else{ %> text-gray-800 <% } %>">Accueil</a>
+				<a href="<%= configuration.base_url %>products" class="flex flex-row font-medium <% if (configuration.current_page == 'products') { %> text-primary-400 <% }else{ %> text-gray-800 <% } %>">Liste de produits</a>
+				<a href="<%= configuration.base_url %>products/new" class="flex flex-row font-medium <% if (configuration.current_page == 'products') { %> text-primary-400 <% }else{ %> text-gray-800 <% } %>">Créer un produit</a>
+
+				<div class="my-4"></div>
+				<% if(data.authenticated == false) { %>
+					<a href="<%= configuration.base_url %>login" class="flex flex-row font-medium text-gray-800">Connexion</a>
+				<% } else { %>
+					<a href="<%= configuration.base_url %>profile" class="flex flex-row font-medium text-gray-800">Mon Profil</a>
+					<a href="<%= configuration.base_url %>logout" class="flex flex-row font-medium text-red-500">Déconnexion</a>
+				<% } %>
+			</div>
+		</div>
+	</div>
+</nav>

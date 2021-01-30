@@ -1,0 +1,802 @@
+{
+	"info": {
+		"_postman_id": "c62732a3-25f7-416b-9063-7977bc31aaea",
+		"name": "CyberSecurite",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "v1",
+			"item": [
+				{
+					"name": "products",
+					"item": [
+						{
+							"name": "Get all products",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/products",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"products"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get all users with query",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"query\": {\n\t\t\"first_name\": \"Mikhael\",\n\t\t\"last_name\": \"Bailly\"\n\t},\n\t\"sort\":{\n\t\t\"first_name\": -1\n\t}\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/users",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"users"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get a product",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/products/:id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"products",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5f8ee4dfd804373b0df7e942"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get a user",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/users/:id",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"users",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5e907efcf4e1766b67071ff9"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "416"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1a0-5/aFVj16CROHtvyGmrEX10iRWBQ\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:53:49 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"user\": {\n            \"status\": true,\n            \"image_profile\": \"https://www.breizh-info.com/wp-content/uploads/2019/12/chewbacca.jpg\",\n            \"first_name\": \"Mikhael\",\n            \"last_name\": \"Bailly\",\n            \"username\": \"Mikheull\",\n            \"email\": \"mikhae.bailly@gmail.com\",\n            \"password\": \"4813494d137e1631bba301d5acab6e7bb7aa74ce1185d456565ef51d737677b2\",\n            \"date_creation\": \"2020-04-10T14:13:16.570Z\",\n            \"date_modified\": \"2020-04-10T14:13:16.570Z\",\n            \"id\": \"5e907efcf4e1766b67071ff9\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Create a product",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"Article 2\",\n\t\"description\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, magni fugiat, odit incidunt necessitatibus aut nesciunt exercitationem aliquam id voluptatibus quisquam maiores officia sit amet accusantium aliquid quo obcaecati quasi.\",\n\t\"photo\": \"article 2\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/products/create",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"products",
+										"create"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Create an user",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"first_name\": \"John\",\n\t\"last_name\": \"Doe\",\n\t\"username\": \"John_doe\",\n\t\"email\": \"john.doe@gmail.com\",\n\t\"password\": \"4813494d137e1631bba301d5acab6e7bb7aa74ce1185d456565ef51d737677b2\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/users/create",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"users",
+												"create"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Edit a product",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"description\": \"Description de l'article numéro 1 edité\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/products/:id/update",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"products",
+										":id",
+										"update"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5f8ee4dfd804373b0df7e942"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Edit an user",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"username\": \"Mikheull\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/users/:id/update",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"users",
+												":id",
+												"update"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebbe73ee02fc606c9eff901"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Delete a product",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/products/:id/delete",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"products",
+										":id",
+										"delete"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebbe73ee02fc606c9eff901"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete an user",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/users/:id/delete",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"users",
+												":id",
+												"delete"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebbe73ee02fc606c9eff901"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "users",
+					"item": [
+						{
+							"name": "Get all users",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/users",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get all users with query",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"query\": {\n\t\t\"first_name\": \"Mikhael\",\n\t\t\"last_name\": \"Bailly\"\n\t},\n\t\"sort\":{\n\t\t\"first_name\": -1\n\t}\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/users",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"users"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get a user",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/users/5f8ef7fbc9c9855249e7df11",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"users",
+										"5f8ef7fbc9c9855249e7df11"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get a user",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/users/:id",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"users",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5e907efcf4e1766b67071ff9"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "416"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1a0-5/aFVj16CROHtvyGmrEX10iRWBQ\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 14 May 2020 17:53:49 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"user\": {\n            \"status\": true,\n            \"image_profile\": \"https://www.breizh-info.com/wp-content/uploads/2019/12/chewbacca.jpg\",\n            \"first_name\": \"Mikhael\",\n            \"last_name\": \"Bailly\",\n            \"username\": \"Mikheull\",\n            \"email\": \"mikhae.bailly@gmail.com\",\n            \"password\": \"4813494d137e1631bba301d5acab6e7bb7aa74ce1185d456565ef51d737677b2\",\n            \"date_creation\": \"2020-04-10T14:13:16.570Z\",\n            \"date_modified\": \"2020-04-10T14:13:16.570Z\",\n            \"id\": \"5e907efcf4e1766b67071ff9\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Edit an user",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\": \"Mikheull\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/users/:id/update",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"users",
+										":id",
+										"update"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5f8ef7fbc9c9855249e7df11"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Edit an user",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"username\": \"Mikheull\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/v1/users/:id/update",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"users",
+												":id",
+												"update"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebbe73ee02fc606c9eff901"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Delete an user",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/users/:id/delete",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"users",
+										":id",
+										"delete"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5ebbe73ee02fc606c9eff901"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete an user",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/v1/users/:id/delete",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"v1",
+												"users",
+												":id",
+												"delete"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "5ebbe73ee02fc606c9eff901"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "m.bailly@subskill.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "root",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3032/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3032",
+							"path": [
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "mikhae.bailly@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "root",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3032/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3032",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Profile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "secret_token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjVmOGVmN2ZiYzljOTg1NTI0OWU3ZGYxMSIsImVtYWlsIjoibWlraGFlLmJhaWxseUBnbWFpbC5jb20ifSwiaWF0IjoxNjAzMjA1MTQ4fQ.gWwv4Jf9JA-wMw6jujr5L2x5zrC6BJ67G9h_BFlY-7M",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "secret_token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjVmOGVmN2ZiYzljOTg1NTI0OWU3ZGYxMSIsImVtYWlsIjoibWlraGFlLmJhaWxseUBnbWFpbC5jb20ifSwiaWF0IjoxNjAzMjA1MTQ4fQ.gWwv4Jf9JA-wMw6jujr5L2x5zrC6BJ67G9h_BFlY-7M",
+									"type": "text",
+									"disabled": true
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3032/user/profile?secret_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjVmOGVmN2ZiYzljOTg1NTI0OWU3ZGYxMSIsImVtYWlsIjoibWlraGFlLmJhaWxseUBnbWFpbC5jb20ifSwiaWF0IjoxNjAzMjA1MTQ4fQ.gWwv4Jf9JA-wMw6jujr5L2x5zrC6BJ67G9h_BFlY-7M",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3032",
+							"path": [
+								"user",
+								"profile"
+							],
+							"query": [
+								{
+									"key": "secret_token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjVmOGVmN2ZiYzljOTg1NTI0OWU3ZGYxMSIsImVtYWlsIjoibWlraGFlLmJhaWxseUBnbWFpbC5jb20ifSwiaWF0IjoxNjAzMjA1MTQ4fQ.gWwv4Jf9JA-wMw6jujr5L2x5zrC6BJ67G9h_BFlY-7M"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "d0g5bnNgHpfuRfqp6lm3UDFnqAMqsOcPBGz43nHFlAIFnxYTCB9q7N5QmG3bzwPavxVBR8h9G6HSxAg5-womdQ5Waf7w6oFMcLPZ3yf59wzvWs6",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "x-access-token",
+				"type": "string"
+			},
+			{
+				"key": "in",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "http://localhost:3031/v1"
+		}
+	]
+}

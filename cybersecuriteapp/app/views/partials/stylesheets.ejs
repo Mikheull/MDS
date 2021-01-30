@@ -1,0 +1,11 @@
+<% if( locals.configuration.fs && locals.configuration.fs.css && locals.configuration.fs.css.online ) { %>
+    <% locals.configuration.fs.css.online.forEach( style => { %>
+        <link rel="stylesheet" type="text/css" href="<%= style %>"> 
+    <% }) %>
+<% } %>
+
+<% if( locals.configuration.fs && locals.configuration.fs.css && locals.configuration.fs.css.local ) { %>
+    <% locals.configuration.fs.css.local.forEach( style => { %>
+        <link rel="stylesheet" type="text/css" href="/assets/stylesheets/<%= style %>.css"> 
+    <% }) %>
+<% } %>

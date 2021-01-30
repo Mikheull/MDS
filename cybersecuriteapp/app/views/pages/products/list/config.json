@@ -1,0 +1,22 @@
+{
+    "metas": {
+        "title": "Security - Liste des produits"
+    },
+
+    "libs": [
+        "jquery",
+        "fontawesome",
+        "alpine"
+    ],
+
+    "css":{
+        "local": [],
+        "online": []
+    },
+
+    "javascript":{
+        "local": [],
+        "online": []
+    }
+
+}

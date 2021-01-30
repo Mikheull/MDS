@@ -1,0 +1,11 @@
+<% if( locals.configuration.fs && locals.configuration.fs.javascript && locals.configuration.fs.javascript.online ) { %>
+    <% locals.configuration.fs.javascript.online.forEach( script => { %>
+        <script src="<%= script %>"></script>
+    <% }) %>
+<% } %>
+
+<% if( locals.configuration.fs && locals.configuration.fs.javascript && locals.configuration.fs.javascript.local ) { %>
+    <% locals.configuration.fs.javascript.local.forEach( script => { %>
+        <script src="/assets/javascripts/<%= script %>.js"></script>
+    <% }) %>
+<% } %>

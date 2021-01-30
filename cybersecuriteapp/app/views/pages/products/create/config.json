@@ -1,0 +1,22 @@
+{
+    "metas": {
+        "title": "Security - Créer un produit"
+    },
+
+    "libs": [
+        "jquery",
+        "fontawesome",
+        "alpine"
+    ],
+
+    "css":{
+        "local": [],
+        "online": []
+    },
+
+    "javascript":{
+        "local": [],
+        "online": []
+    }
+
+}

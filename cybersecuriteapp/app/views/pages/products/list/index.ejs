@@ -1,0 +1,20 @@
+<%- include('../../../partials/header'); -%>
+
+<div class="px-6 lg:px-24 pb-6 h-auto my-10 min-h-screen">
+
+	<section class="flex flex-row flex-wrap mx-auto">	
+		<% if(locals.data.products && locals.data.products.products) { %>
+			<% if(locals.data.products.total > 0) { %>
+				<% data.products.products.forEach(function(product) { %>
+					<%- include('partials/item', {product: product}); -%>
+				<% }); %>
+			<% }else{ %>
+				<%- include('partials/empty'); -%>
+			<% } %>
+		<% } %>
+   </section>
+   
+</div>
+
+
+<%- include('../../../partials/footer'); -%>

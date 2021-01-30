@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <%- include('partials/metas'); -%>
+    <%- include('partials/stylesheets'); -%>
+    
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,600,700&display=swap" rel="stylesheet"> 
+    <link href="/build/stylesheets/main.css" rel="stylesheet">
+
+    <%- include('partials/libs'); -%>
+</head>
+
+<body class="app">
+    <%- include( 'pages/' + locals.configuration.render + '/index.ejs'); -%>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/assets/javascripts/main.js"></script>
+    <%- include('partials/javascripts'); -%>
+</body>
+</html>

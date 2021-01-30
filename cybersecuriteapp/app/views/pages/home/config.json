@@ -1,0 +1,24 @@
+{
+    "metas": {
+        "title": "Security - Accueil"
+    },
+
+    "must_be_logged": false,
+
+    "libs": [
+        "jquery",
+        "fontawesome",
+        "alpine"
+    ],
+
+    "css":{
+        "local": [],
+        "online": []
+    },
+
+    "javascript":{
+        "local": [],
+        "online": []
+    }
+
+}
