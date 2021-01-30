@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Notepad</string>
+    <string name="app_placeholder_title">Titre</string>
+    <string name="app_placeholder_content">Contenu</string>
+</resources>
