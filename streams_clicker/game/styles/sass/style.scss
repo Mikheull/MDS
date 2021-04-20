@@ -29,3 +29,27 @@
 .worker_active img {
     filter: grayscale(0);
 }
+
+.gradient_text {
+    span {
+        background-color: #f3ec78;
+        background-image: linear-gradient(45deg, dodgerblue, purple, red);
+        background-size: 100%;
+        font-family: 'Arvo', serif;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+        margin: 0;
+        
+    }
+}
+
+
+.profil_img {
+    width: 78px;
+    left: 45%;
+    top: 25px;
+}
+
+.sp_font {font-family: 'Arvo', serif;}

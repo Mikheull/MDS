@@ -45,28 +45,30 @@ class Choose_characters extends Component {
             let img = `images/characters/${data.icon}`
 
             return <div className="bg-white shadow-lg rounded p-3" key={data.key}>
-            <div className="group relative">
-              <img className="w-full md:w-48 block rounded" src={img} alt="" />
-              <div className="absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly">
-                <button className="hover:scale-110 text-white opacity-0 transform translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 transition" onClick={() => { this.chooseChar(data.key) }}>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" className="bi bi-play-circle-fill" viewBox="0 0 16 16">
-                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div className="p-2">
-              <h3 className="text-gray-800 text-lg font-extrabold">- {data.name} -</h3>
-            </div>
-          </div>
+				<div className="group relative">
+					<img className="w-full md:w-24 block rounded mx-auto" src={img} alt="" />
+					<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full md:w-24 h-full flex items-center group-hover:opacity-100 transition justify-evenly">
+						<button className="hover:scale-110 text-white opacity-0 transform group-hover:translate-y-0 group-hover:opacity-100 transition" onClick={() => { this.chooseChar(data.key) }}>
+							<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-play-circle-fill" viewBox="0 0 16 16">
+							<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+						</svg>
+						</button>
+					</div>
+				</div>
+				<div className="p-2">
+					<h3 className="text-gray-800 text-lg font-extrabold">- {data.name} -</h3>
+				</div>
+          	</div>
         })
 
         return (
-            <div className={(this.state.visiblity) ? 'mx-auto h-screen w-screen pregame flex items-center justify-center fixed top-0 z-10' : 'hidden'}>
+            <div className={(this.state.visiblity) ? 'mx-auto h-screen w-screen pregame flex items-center justify-center fixed top-0 z-50 overflow-scroll' : 'hidden'}>
                 
-                <div className="text-white text-center">
-                    <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-gray-200 mb-8">Choose your character</h1>
-                    <div className="grid grid-cols-1 sm:grid-cols-4 gap-8">
+                <div className="text-white text-center flex items-center flex-col md:flex-row px-6">
+                    <h1 className="flex-1 text-4xl sm:text-5xl md:text-8xl font-bold mb-8 gradient_text">
+						<span>Choose your character</span>
+					</h1>
+                    <div className="flex-1 grid grid-cols-2 sm:grid-cols-3 gap-6">
                         {_characters}
                     </div>
                 </div>

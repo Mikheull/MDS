@@ -1,7 +1,6 @@
 # StreamClicker
 
 
-
 ```
 cd game
 npm i
