@@ -1,0 +1,31 @@
+@import "~tailwindcss/base";
+@import "~tailwindcss/components";
+@import "~tailwindcss/utilities";
+
+
+
+.pregame {
+    background: rgb(15,14,14);
+    background: linear-gradient(31deg, rgba(15,14,14,1) 0%, rgba(14,11,29,1) 96%); 
+
+    &_item {
+        img {
+            filter: grayscale(1);
+            transition-duration: 0.3s;
+        }
+
+        &:hover {
+            img {
+                filter: grayscale(0);
+                transition-duration: 0.3s;
+            }
+        }
+    }
+}
+
+.worker img {
+    filter: grayscale(1);
+}
+.worker_active img {
+    filter: grayscale(0);
+}
