@@ -1,2 +1,14 @@
-# wd-cdcjl_generator
- Weekdev Project - Web site to generate class council for JL Team - #3
+# StreamClicker
+
+
+
+```
+cd game
+npm i
+npm run start
+
+
+cd ../app
+npm i
+npm run start
+```
