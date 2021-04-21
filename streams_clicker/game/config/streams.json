@@ -88,5 +88,23 @@
       {
         "price": 12000000
       }
+  },
+  {
+    "key": "services",
+    "name": "Service",
+    "icon": "006-services.svg",
+    "delay": [
+      300000,
+      15000,
+      100
+    ],
+    "coefficient": 1.20,
+    "intial_price": 1200000000,
+    "intial_revenue": 700000000,
+    "item_default": 0,
+    "manager":
+      {
+        "price": 2000000000
+      }
   }
 ]
