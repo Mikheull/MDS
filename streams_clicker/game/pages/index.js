@@ -16,7 +16,7 @@ class Home extends Component {
       character_selected: [],
       streams : [],
       streamsData : [],
-      money: 900
+      money: 0
     }
 
     this.updateCharacter = this.updateCharacter.bind(this);
@@ -43,14 +43,14 @@ class Home extends Component {
           item_buy: element.item_default,
           coefficient: element.coefficient,
           delay: element.delay,
+          level: 1,
           is_delaying: false,
-		  manager_buy: false,
-		  manager_price: element.manager.price,
+          manager_buy: false,
+          manager_price: element.manager.price,
           price: element.intial_price,
           intial_price: element.intial_price,
           revenue: element.intial_revenue,
           intial_revenue: element.intial_revenue,
-          is_buyable: element.is_buyable
         }
       )
     });

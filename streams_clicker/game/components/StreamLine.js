@@ -6,6 +6,7 @@ class StreamLine extends Component {
         this.handleClick = this.handleClick.bind(this);
         this.handleStream = this.handleStream.bind(this);
         this.handleBuyWorker = this.handleBuyWorker.bind(this);
+        this.startWorker = this.startWorker.bind(this);
 
         this.state = {
             streamsData: [],
@@ -29,6 +30,16 @@ class StreamLine extends Component {
         if(_v[i].item_buy && _v[i].item_buy !== 0 && !_v[i].is_delaying){
 
             // Delai
+            let lvl = _v[i].level;
+            if(_v[i].item_buy <= 50){
+                lvl = 0
+            }else if(_v[i].item_buy >50 && _v[i].item_buy <= 100){
+                lvl = 1
+            }else{
+                lvl = 2
+            }
+
+            _v[i].level = lvl;
             _v[i].is_delaying = true;
             self.setState({streamsData: _v});
             setTimeout(function(){
@@ -36,7 +47,7 @@ class StreamLine extends Component {
 
                 _v[i].is_delaying = false;
                 self.setState({streamsData: _v});
-            }, _v[i].delay);
+            }, _v[i].delay[lvl]);
         }
     }
 
@@ -64,6 +75,7 @@ class StreamLine extends Component {
 
             _v[i].manager_buy = true;
             this.setState({streamsData: _v});
+            this.startWorker(key)
         }
     }
 
@@ -75,6 +87,28 @@ class StreamLine extends Component {
         }
     }
 
+    startWorker(key){
+        const self = this;
+        
+        let _v = self.props.streamsData;
+        const i = this.search(key, _v);
+
+        if(_v[i].manager_buy){
+            let lvl = _v[i].level;
+            if(_v[i].item_buy <= 50){
+                lvl = 0
+            }else if(_v[i].item_buy >50 && _v[i].item_buy <= 100){
+                lvl = 1
+            }else{
+                lvl = 2
+            }
+
+            window.setInterval(function(){
+                self.props.updateMoney(self.props.money + _v[i].revenue)
+            }, _v[i].delay[lvl]);
+        }
+    }
+
     render() {
         let img = `images/streams/${this.props.data.icon}`
         const i = this.search(this.props.data.key, this.props.streamsData);
@@ -83,15 +117,10 @@ class StreamLine extends Component {
         const price = (v) ? v.price : this.props.data.intial_price
 
         // Level
+        
         let lvl = 0;
         if(v){
-            if(v.item_buy <= 50){
-                lvl = 50;
-            }else if(v.item_buy <= 100){
-                lvl = 100;
-            }else{
-                lvl = v.item_buy + 100;
-            }
+            lvl = (v.level + 1) * 50;
         }else{
             lvl = 50;
         }

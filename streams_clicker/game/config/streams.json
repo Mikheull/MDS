@@ -3,7 +3,11 @@
     "key": "artist",
     "name": "Artiste",
     "icon": "001-karaoke.svg",
-    "delay": 600,
+    "delay": [
+      600,
+      300,
+      100
+    ],
     "coefficient": 1.07,
     "intial_price": 4,
     "intial_revenue": 1,
@@ -17,7 +21,11 @@
     "key": "customer",
     "name": "Client",
     "icon": "002-user.svg",
-    "delay": 3000,
+    "delay": [
+      3000,
+      1500,
+      100
+    ],
     "coefficient": 1.09,
     "intial_price": 250,
     "intial_revenue": 60,
@@ -31,7 +39,11 @@
     "key": "radio",
     "name": "Radio",
     "icon": "005-boom-box.svg",
-    "delay": 8000,
+    "delay": [
+      8000,
+      4000,
+      100
+    ],
     "coefficient": 1.20,
     "intial_price": 16000,
     "intial_revenue": 2500,
@@ -45,7 +57,11 @@
     "key": "label",
     "name": "Label",
     "icon": "004-edm.svg",
-    "delay": 30000,
+    "delay": [
+      30000,
+      15000,
+      100
+    ],
     "coefficient": 1.07,
     "intial_price": 1200000,
     "intial_revenue": 400000,
@@ -59,7 +75,11 @@
     "key": "server",
     "name": "Piratage",
     "icon": "003-world.svg",
-    "delay": 60000,
+    "delay": [
+      60000,
+      30000,
+      100
+    ],
     "coefficient": 1.09,
     "intial_price": 3700000,
     "intial_revenue": 1400000,
