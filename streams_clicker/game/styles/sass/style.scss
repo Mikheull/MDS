@@ -1,0 +1,63 @@
+@import "~tailwindcss/base";
+@import "~tailwindcss/components";
+@import "~tailwindcss/utilities";
+
+
+
+.pregame {
+    background: rgb(15,14,14);
+    background: linear-gradient(31deg, rgba(15,14,14,1) 0%, rgba(14,11,29,1) 96%); 
+
+    &_item {
+        img {
+            filter: grayscale(1);
+            transition-duration: 0.3s;
+        }
+
+        &:hover {
+            img {
+                filter: grayscale(0);
+                transition-duration: 0.3s;
+            }
+        }
+    }
+}
+
+.worker img {
+    filter: grayscale(1);
+}
+.worker_active img {
+    filter: grayscale(0);
+}
+
+.gradient_text {
+    span {
+        background-color: #f3ec78;
+        background-image: linear-gradient(45deg, dodgerblue, purple, red);
+        background-size: 100%;
+        font-family: 'Arvo', serif;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+        margin: 0;
+        
+    }
+}
+
+
+.profil_img {
+    width: 78px;
+    left: 45%;
+    top: 25px;
+}
+
+.sp_font {font-family: 'Arvo', serif;}
+
+
+.loader {
+    width: 51px;
+    padding: 14px;
+    margin: 4px 6px 4px;
+    height: 53px;
+}
